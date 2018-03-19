@@ -1,0 +1,174 @@
+body{
+	background: #f5f5f5;
+}
+a{
+	text-decoration: none;
+}
+.head{
+	width: 100%;
+	height: 84px;
+	background:#fff;
+	min-width: 1140px;
+}
+.head-content{
+	width: 1140px;
+	padding: 0 15px;
+	height: 68px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.head-log{
+	float: left;
+	margin-top:18px;
+}
+.sever-Nub{
+	float: right;
+	height: 84px;
+}
+.sever-Nub span{
+	font-size: 17px;
+	line-height: 84px;
+	color: #999;
+}
+.container{
+	min-width: 1140px;
+	margin:0 auto;	
+	padding: 0;
+}
+.container-content{
+	margin-top: 20px;
+	overflow: hidden;
+	height: 500px;
+	width: 1140px;
+}
+.container-img{
+	float: left;
+	width: 740px;
+	padding-right: 20px;
+}
+.container-img img{
+	width: 720px;
+}
+.userform{
+	float: right;
+	height: 500px;
+	width: 398px;
+	text-align: center;
+	border: 1px solid #e4e4e4;
+	background:#fff;
+}
+.title{
+	height: 60px;
+	padding: 20px 35px 18px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.userform a{
+	text-decoration: none;
+	color:#00bc8d; 
+	cursor:pointer;
+}
+.userform h3{
+	text-align: left;	
+	margin: 0;	
+	font-size: 20px;
+}
+.userform h3 span{
+	font-size: 12px;
+	float: right;margin-top:5px;
+}
+.upInput, .downInput{
+	width: 100%;
+	margin-bottom: 12px;
+	height: 40px;
+	padding:12px 12px 10px;
+	border:1px solid #e4e4e4;
+	border-radius:4px;
+	color:#000;
+	font-size:14px;
+	transition:border .25s linear;
+}
+.upInput:focus, .downInput:focus{
+	border-color:#00bc8d;
+	outline: none;
+}
+.userform-content{
+	width: 398px;
+	height: 386px;
+	padding: 31px 35px 22px 35px;
+}
+.check{
+	width: 100%;
+	height:140px;
+	overflow: hidden;
+	text-align: left;
+	font-size: 14px;
+	line-height: 33px;
+	margin: 0 auto;
+	color:#999;
+}
+.check input{
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin-top: 10px;
+	background: green;
+	cursor:pointer;
+}
+.check span{
+	margin-left: 5px;
+}
+.losepaw{
+	float: right;
+	cursor:pointer;
+}
+.login{
+	width:100%;
+	height: 44px;
+	color: #fff;
+	outline: none;
+	border: none;
+	padding: 0;
+}
+.threeNub{
+	font-size: 12px;
+	width:100%;
+	text-align: left;
+	margin: 20px auto 0;
+}
+.sina,.qq{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background:url('/images/sina.png');
+	background-size: contain;
+	vertical-align: middle;
+	margin-bottom: 3px; 
+	margin-left: 5PX; 
+	cursor:pointer;
+}
+.qq{
+	height: 16px;
+	width: 16px;
+	background:url('/images/QQ.png');
+	background-size: contain;
+}
+.borrower{
+	border-top:1px solid #e4e4e4;
+	width: 398px;
+	height: 53px;
+	padding: 14px 35px;
+}
+.borrower a{
+	color:#00bc8d;
+	text-decoration:none;
+	margin-left: 3px;
+	cursor:pointer;
+}
+.err{
+	position:absolute;
+	bottom:10px;
+	left:67%;
+	margin:0 33px;
+	color:red;
+	text-align:center;
+}

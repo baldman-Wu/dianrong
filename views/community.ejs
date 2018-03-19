@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>高效透明的P2P网贷投资平台 - 点融网官方论坛</title>
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/iconfont.css">
+	<link rel="stylesheet" href="/css/CommunityDianrong.css">
+</head>
+<body>
+	<header>
+		<div class="headerNavigation">
+			<div class="headercontainer">
+				<span class="sl-logo"></span>
+				<div class="comeing_nv">
+					<ul class="cl">
+						<li class="cl-b">
+							<a href="#">社区</a>
+						</li>
+						<li>
+							<a href="#">新手帮助</a>
+						</li>
+						<li class="list-style" style="border-right:1px solid #ccc;border-top-right-radius:5px">
+							<a href="#" class="module">板块</a><i class="iconfont icon-jiantouxia" style="position: absolute;right:15px;font-size:12px"></i>
+
+							<ul class="nav-ul-li">
+								<li>
+									<a href="">公告区</a>
+								</li>
+								<li>
+									<a href="">产品动态</a>
+								</li>
+								<li>
+									<a href="">点融小专品</a>
+								</li>
+								<li>
+									<a href="">点融黑帮</a>
+								</li>
+								<li>
+									<a href="">谈点事</a>
+								</li>
+								<li>
+									<a href="">攒点钱</a>
+								</li>
+								<li>
+									<a href="">发点财</a>
+								</li>
+								<li>
+									<a href="">投点资</a>
+								</li>
+								<li>
+									<a href="">江湖杂谈</a>
+								</li>
+								<li>
+									<a href="">投诉建议</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="user-login">
+					<ul>
+						<% if (!isLogin) { -%>
+							<li>
+								<a href="/login">登陆</a>
+							</li>
+							<li>
+								<a class="content" href="/register">注册</a>
+							</li>
+						<% } else { -%>
+							<li>
+								<a href="javascript:void(0)" class="context">你好！</a>
+							</li>
+							<li>
+								<a style="color: #f68121;" href="javascript:void(0)"><%= loginStatusData._id%></a>
+							</li>
+                        <% } -%>  
+						&nbsp;|
+						<img src="/images/phone.png" />
+						<span>客服热线：10109188</span>
+					</ul>
+					<div class="inpt-text">
+						<input class="int-context" type="" name="" id="" placeholder="请输入搜索内容" value="" />
+						<button class="btn-context">
+							<span>🔍</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wp">
+			<div class="warp-con">
+				<div class="warp-forum">
+					<div class="comeing_channel_tab">
+						<ul class="comeing_channel-ul">
+							<li class="comeing_li">
+								<a class="comeing_li_a" href="#">推荐</a>
+							</li>
+							<li>
+								<a href="#">最新</a>
+							</li>
+							<li>
+								<a href="#">最热</a>
+							</li>
+							<li>
+								<a href="#">精华</a>
+							</li>
+						</ul>
+					</div>
+					<div class="comeing_channel_tab_area">
+						<table class="comeing_channel_threadlist">
+							<tbody>
+								<% for(var index in data){ %>
+								<tr>
+									<td class="threadist-td">
+										<a href=""><img src="<%=data[index].img%>" /></a>
+									</td>
+									<td class="threadist-td-a">
+										<h3><a href="#"><%=data[index].title%></a></h3>
+										<p>
+											<a href=""><%=data[index].username%></a>
+											于<span><%=data[index].publishTime%></span>发表
+											<a href=""><%=data[index].prefecture%></a>
+											<a href="">最后回复<span><%=data[index].lastPostTime%></span></a>
+											<span class="clickandreply-a"><%=data[index].frequency%></span>
+											<span class="clickandreply"><%=data[index].views%></span>
+										</p>
+									</td>	
+								</tr>
+								<%}%>
+							</tbody>	
+						</table>		
+					</div>
+				</div>
+				<div class="warp-forum-text">
+					<div class="comeing_channel_addthread">
+						<a href="" class="png">发表主题</a>
+					</div>
+					<div class="bm_h">
+						<h2>热门板块</h2>
+					</div>
+					<ul class="bm_h-ul">
+						<li>
+							<a href="">公告区</a>
+						</li>
+						<li>
+							<a href="">点融黑帮</a>
+						</li>
+						<li>
+							<a href="">财经咨询</a>
+						</li>
+						<li>
+							<a href="">点融大家谈</a>
+						</li>
+						<li>
+							<a href="">江湖杂谈</a>
+						</li>
+						<li>
+							<a href="">点融小专区</a>
+						</li>
+						<li>
+							<a href="">点融商城</a>
+						</li>
+						<li>
+							<a href="">财经风向标</a>
+						</li>
+						<li>
+							<a href="">投资交流</a>
+						</li>
+						<li>
+							<a href="">投诉建议</a>
+						</li>
+						<li id="li-il-s">
+							<a href="">全部板块</a>
+						</li>
+					</ul>
+					<div class="box"></div>
+					<div class="bm_c">
+						<div class="bm_h">
+							<h2>精彩推荐</h2>
+						</div>
+					</div>
+					<div class="bm_c-1">
+						<div class="tuijianone">
+							<a href=""><img src="/images/7853978b962ddd1ab4de59d1f16bded1.jpg" alt="" style="margin-bottom: 10px;width: 200px;height: inherit;margin-top: 10px;" /></a>
+							<h3>	<a href="">点小融课堂</a></h3>
+						</div>
+						<div class="tuijianone1">
+							<a href=""><img src="/images/efb519e082f12b86b77fd0fc2c02d098.jpg" style="margin-bottom: 10px;width: 200px;height: inherit;margin-top: 10px;" /></a>
+							<h3 style="padding-bottom: 26px;"><a href="">2017新财富时代洞察报告</a></h3>
+						</div>
+					</div>
+					<div class="box"></div>
+					<div class="panhang2">
+						<h2 class="ppanhang1">话唠榜</h2>
+						<h2 class="ppanhang2">新丁榜</h2>
+						<div class="div-div">
+							<p class="div-div-p">昵称
+								<p class="div-div-p-p">周发帖</p>
+							</p>
+						</div>
+						<ol class="olol">
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+							<li>
+								<img src="/images/kehu1.jpg" />
+								<a href="">淡如菊</a>
+								<em>13486</em>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="community-foot">
+			<div class="footer-site-map">
+				<dl>
+					<dt class="footer-home">公司信息</dt>
+					<dd><a href="#">公司简介</a></dd>
+					<dd><a href="#">点融动态</a></dd>
+					<dd><a href="#">媒体报道</a></dd>
+					<dd><a href="#">加入我们</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">点融社区</a></dd>
+				</dl>
+				<dl class="policy">
+					<dt class="footer-policy">相关政策</dt>
+					<dd><a href="#">安全保障</a></dd>
+					<dd><a href="#">费率说明</a></dd>
+					<dd><a href="#">多重保障</a></dd>
+					<dd><a href="#">使用条款</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">免责声明</a></dd>
+				</dl>
+				<dl class="app-download">
+					<dt class="footer-mobile">手机应用</dt>
+					<dd>
+						<a href="#" class="iPhone">
+							<i class="iconfont icon-pingguo" aria-hidden="true"></i>iPhone
+						</a>
+					</dd>
+					<dd>
+						<a href="#" class="android">
+							<i class="iconfont icon-anzhuo" aria-hidden="true"> Android</i>
+						</a>
+					</dd>
+				</dl>
+				<dl class="our-office">
+					<dt>联系我们</dt>
+					<dd class="map"></dd>
+					<dd>北京</dd>
+					<dd>上海</dd>
+					<dd>广州</dd>
+					<dd>重庆</dd>
+					<dd>南京</dd>
+					<dd>成都</dd>
+					<dd>天津</dd>
+					<dd>武汉</dd>
+					<dd>大连</dd>
+					<dd>深圳</dd>
+					<dd>合肥</dd>
+					<dd><a href="#">更多</a></dd>
+					<dd class="media">如果您有广告投放，媒体合作需求，请发送邮件至：<a href="#">media@dianrong.com</a></dd>
+				</dl>
+			</div>
+			<dl class="footer-friend-link clearfix">
+				<dt>友情链接</dt>
+				<dd><a href="#">和讯理财</a></dd>
+				<dd><a href="#">叩富理财</a></dd>
+				<dd><a href="#">金斧子理财</a></dd>
+				<dd><a href="#">香港保险</a></dd>
+				<dd><a href="#">金融导航</a></dd>
+				<dd><a href="#">金苏财富</a></dd>
+				<dd><a href="#">贵金属</a></dd>
+				<dd><a href="#">中金网</a></dd>
+				<dd><a href="#">顶牛股网</a></dd>
+				<dd><a href="#">Fxsol官网</a></dd>
+				<dd><a href="#">利得财富</a></dd>
+				<dd><a href="#">P2P投资</a></dd>
+			</dl>
+			<ul class="footer-copyright">
+				<li>©2015 点融网</li>
+				<li>沪ICP备14028311号</li>
+				<li>上海点荣金融信息服务有限责任公司</li>
+			</ul>
+			<div class="footer-authentication-info">
+				<a href="#" class="picp">
+					<span>310101100041386</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<div id="toTop">
+		<div class="to-go-top">
+			<a href="javascript:void(0)" title="返回顶部">
+				<span>回到顶部</span>
+			</a>
+		</div>
+		<div class="qq">
+			<a href="" title="官方QQ群">
+				<span>官方QQ群</span>
+			</a>
+		</div>
+		<div class="weixin">
+			<a href="" title="关注微信">
+				<span>关注微信</span>
+				<div>
+					<img src="https://forum.dianrong.com/source/plugin/jz52_top/template/wxqr.jpg" alt="">
+					<p>微信扫一扫关注点融服务号</p>
+				</div>
+			</a>
+		</div>
+		<div class="people">
+			<div>
+				<a href="" title="个人中心" class="gr-btn">
+					<span>个人中心</span>
+				</a>
+				<div class="people-jump">
+					<div class="people-top">
+						<div class="gr-top">
+							<h3>个人中心</h3>
+						</div>
+						<div class="gr-center">
+							<div>
+								<img src="https://forum.dianrong.com/uc_server/images/noavatar_big.gif" alt="">
+							</div>
+						</div>
+						<div class="gr-bottom">
+							<% if(!isLogin){%>
+							<a href="/login" class="gr-login">登录或注册</a>
+							<% }else{%>
+							<a href="javascript:void(0)" class="gr-login"><%= loginStatusData._id%></a>
+							<% }%>
+						</div>
+					</div>	
+					<div class="people-bottom">
+						<a href="#" title="收藏"></a>
+						<a href="#" title="帖子"></a>
+						<a href="#" title="好友"></a>
+						<a href="#" title="提醒"></a>
+						<a href="#" title="消息"></a>
+						<a href="#" title="设置"></a>
+						<a href="#" title="任务"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script src="/js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/CommunityDianRong.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(function(){
+			$(".to-go-top").hide();
+			$(window).scroll(function(){
+				var top=$(window).scrollTop();
+				if(top<500){
+					$(".to-go-top").hide();
+				}if(top>=500) $(".to-go-top").show();
+			});
+			$(".to-go-top").click(function(){
+				var timer=setInterval(function(){
+					window.scrollBy(0,-100);
+					if($(window).scrollTop()==0){
+						clearInterval(timer);
+					}
+				},50)
+				
+			})
+		});
+	</script>
+</html>

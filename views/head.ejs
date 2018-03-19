@@ -1,0 +1,71 @@
+<!-- 头部 -->
+        <div class="sl-header">
+            <div class="container">
+                <a href="/" class="header-logo">互联网投资，上点融</a>
+                <ul class="header-help">
+                    <li class="user">
+                        <div class="no-logged">
+                        <% if (!isLogin) { -%>
+                            <a href="/login" class="context">登陆</a>
+                            <a style="color: #f68121;" href="/register">注册</a>
+                        <% } else { -%>
+                            <a href="javascript:void(0)" class="context">你好！</a>
+                            <a style="color: #f68121;" href="javascript:void(0)"><%= loginStatusData._id%></a>
+                        <% } -%>  
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">新手引导</a>
+                    </li>
+                    <li>
+                        <a href="#">帮助中心</a>
+                    </li>
+                    <li>
+                        <a href="#">公告</a>
+                    </li>
+                    <li>
+                        <a href="#">企业版</a>
+                    </li>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li class="hoverli-text" style="font-size: 18px;">
+                        <em class="iconfont icon-shouji"></em>
+                        <div class="hoverimg">
+                            <div class="triangle-inner"></div>
+                            <img src="/images/download-app.png" />
+                        </div>
+                    </li style="font-size: 18px;">
+                    <li class="hoverli-text-1">
+                        <em class="iconfont icon-weixin"></em>
+                        <div class="hoverimg-1">
+                            <div class="triangle-inner-1"></div>
+                            <img src="/images/header-public-code.png" />
+                        </div>
+                    </li>
+                    <li class="service-number" style="border-right: none;">
+                        <em class="iconfont icon-phone">    客服热线：10109188</em>
+                    </li>
+                </ul>
+                <ul class="header-nav">
+                    <li style="border-left: none;">
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="/market">项目列表</a>
+                    </li>
+                    <li>
+                        <a href="/borrow-money" target="_blank">我要借款</a>
+                    </li>
+                    <li>
+                        <a href="/about">信息披露</a>
+                    </li>
+                    <li>
+                        <a href="/community" target="_blank">点融社区</a>
+                    </li>
+                    <li>
+                        <a href="/login">我的账户</a>
+                    </li>
+                </ul>
+            </div>
+        </div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+		}
+		div img{
+			width: 220px;
+			height: 60px;
+		}
+		button{
+			width: 120px;
+			height: 150px;
+		}
+		#show{
+			width: 200px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<img src='' alt="" id="pic" >
+	<button onclick="changePic()">+</button>
+	<div id="show"></div>
+</div>
+	<script>
+
+	var pic = [
+					22848,24424,25444,25439,25588,26843,28388,28928,32636,34246,34868,36699,
+					38445,39465,42862,43834,44428,54324,54896,55339,55462,55896,56825,62244,
+					64493,64494,64859,65466,83234,84345,84626,85529,85842,88536,88564,89383,
+					89668,93368,93398,95552,96484,96666,99863
+					]
+
+
+
+var show = document.getElementById('show')
+var myPic = document.getElementById('pic');
+
+
+var num = Math.floor(pic.length*Math.random())
+myPic.src=pic[num]+".jpg";
+console.log(num)
+		var i=0;
+		function changePic(){
+			if(i==42){
+				i=0
+			}
+			console.log(pic.length)
+			myPic.src=pic[i]+'.jpg';
+			show.innerHTML=pic[i]	
+		i++;
+		}
+					
+	</script>
+</body>
+</html>

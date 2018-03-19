@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>项目列表-团团赚,栗栗盈,散标,债权转让 -点融官网</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel='stylesheet' href='/css/markte.css' />
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+  	<!-- 头部 -->
+	<% include ./head%>
+	<!-- 主体 -->
+    <div class="container">
+		<div class="container-top">
+			<div class="container-left"><img src="/images/ttz_tzyc.jpg" alt=""></div>
+			<div class="container-right">
+				<div class="container-right-data">
+					<div class="dataimg"><img src="/images/market-cash.png" alt=""></div>
+					<div class="data-right">
+						<p class="data-right-top">用户累计投资(元)</p>
+						<p class="data-right-bottom">39,694,851,514.52</p>
+					</div>
+				</div>
+
+				<div class="container-right-data">
+					<div class="dataimg"><img src="/images/market-rise.png" alt=""></div>
+					<div class="data-right">
+						<p class="data-right-top">用户累计赚取(元)</p>
+						<p class="data-right-bottom">1,604,940,564.55</p>
+					</div>
+				</div>
+
+				<div class="container-right-data">
+					<div class="dataimg"><img src="/images/market-people.png" alt=""></div>
+					<div class="data-right">
+						<p class="data-right-top">累计入团(人次)</p>
+						<p class="data-right-bottom">3,213,004</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<% for(var index in data){ %>		
+			<div class="container-center">
+				<div class="container-center-top">
+    				<h3 ><%=data[index].title %><span><%=data[index].explain %> </span></h3>
+    			</div>	
+			<% for(var num in data[index].child){ %>
+				<div class="container-center-bottom">
+	    			<div class="content">
+	    				<div class="content-item">
+	    					<div class="icn">
+		    					<%if(index==1 && num==0){%>
+		    						<i><img src="/images/<%= data[index].child[num].img%>" alt=""></i>
+		    						<p style='color:#ff775c'><%= data[index].child[num].title%></p>
+		    					<% }else if(index==0){%>
+									<i><img src="/images/<%= data[index].child[num].img%>" alt=""></i>
+		    						<p><%= data[index].child[num].title%></p>
+		    					<% }else{ %>
+		    						<p style="font-size: 22px;line-height: 30px;color:#333"><%= data[index].child[num].title%></p>
+		    					<% } %>		
+	    					</div>
+
+	    					<div class='income'>
+	    						<p class="num"><%= data[index].child[num].income.substr(0,1)%><small><%= data[index].child[num].income.substring(1,data[index].child[num].income.length)%></small></p>
+	    						<p class="text">七日年收益率</p>
+	    					</div>
+
+							<div class="starNum">
+								<p><%= data[index].child[num].starNum%>元</p>
+								<p class="text">起投金额</p>
+							</div>
+
+							<div class='movTime'>
+								<p class='move'><%= data[index].child[num].movTime%></p>
+							</div>
+
+							<div class="butt">
+								<a href="#" >立即投资</a>
+						
+							</div>
+	    				</div>
+	    			</div>
+	    		</div>					
+			<% } %>
+		</div>
+	<% } %>
+	<p class='bottom-p'>借贷有风险，投资需谨慎</p>
+    </div>
+	<!-- 尾部 -->
+	<% include ./foot%>
+  </body>
+  	<script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script src="/js/market.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                type:"GET",
+                url:"/market",
+                success:function(data,textStatus){
+                    console.log(data);
+                }
+            });
+        })
+        
+    </script>
+</html>

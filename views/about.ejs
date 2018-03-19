@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息披露-点融简介</title>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="/css/about-css/dashiji.css">
+    <link rel="stylesheet" href="/css/about-css/normalize.css">
+    <link rel="stylesheet" href="/css/about-css/about.css">
+    <script src="/js/about-js/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts-en.common.min.js"></script>
+</head>
+<body>
+    <header>
+        <% include ./head %>
+    </header>
+    <main>
+        <div id="about-main">
+            <div class="main-about-us about-wrapper">
+                <div class="about-nav">
+                    <ul>
+                        <router-link to="/company" tag="li"><a href="#" v-cloak>关于点融</a></router-link>
+                        <router-link to="/safety" tag="li"><a href="" v-cloak>平台优势</a></router-link>
+                        <router-link to="/operation-data" tag="li"><a href="" v-cloak>运营数据</a></router-link>
+                        <router-link to="/depository" tag="li"><a href="" v-cloak>银行存管</a></router-link>
+                        <router-link to="/risk-strategy" tag="li"><a href="" v-cloak>风控策略</a></router-link>
+                        <router-link to="/news" tag="li"><a href="" v-cloak>点融动态</a></router-link>
+                        <router-link to="/media" tag="li"><a href="" v-cloak>媒体报道</a></router-link>
+                        <router-link to="/laws" tag="li"><a href="" v-cloak>法律法规</a></router-link>
+                        <router-link to="/partner" tag="li"><a href="" v-cloak>合作伙伴</a></router-link>
+                    </ul>
+                </div>
+                <div class="about-scope">
+                      <keep-alive>
+                          <router-view></router-view>
+                      </keep-alive>
+
+                </div>
+            </div>
+        </div>
+        <!-- 关于点融 -->
+        <template id="company">
+            <div class="company">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">公司简介</h4>
+                        <a href="" class="sidebar link">查看公司注册信息</a>
+                    </div>
+                    <div class="card-content">
+                        <img src="/images/about-img/company-banner.png" alt="">
+                        <div class="intro">
+                            <p>点融是中国领先的互联网借贷信息服务中介公司，2012年，由Lending Club的联合创始人、前技术总裁苏海德（Soul Htite）与上海知名律师、私募基金合伙人郭宇航共同创立，总部位于上海黄浦区, 2012年成立至今保持着良好的经营状态。平台上线时间为2013年3月，目前点融在全国的分公司有19家。截止到2017年9月30日，与上海点荣金融信息服务有限责任公司签署劳动合同的人数总和为2600+，实缴资本金2亿元人民币。  
+                            </p>
+                            <p>点融立志为中国市场提供创新的金融技术解决方案，并专注于互联网借贷信息中介服务业务。</p>
+                            <p>互联网借贷中介服务平台帮助个人和企业在互联网上轻松获得贷款，通过点融强大、简单的平台基础设施，优质的借款人可以获得来自于中国各地投资人的资金支持。点融利用技术降低贷款的获客、运营、服务、贷后管理成本，从而可以提供更低利率、更好的借款产品。</p>
+                            <p>点融获得了资本市场和传统金融机构的广泛认可和支持，已获得新加坡政府投资公司、渣打直接投资有限公司、老虎环球基金、Simone投资管理公司、中民国际融资租赁股份有限公司、渤海租赁、北极光创投、中国互联网金融科技基金（由中民国际资本有限公司与广发投资联合发起成立的基金）及巨溢资本等机构的融资。</p>
+                            <p>2016年3月25日，全国性的行业协会中国互联网金融协会成立。经全体会员投票，点融成为48家常务理事单位之一。</p>
+                        </div>
+                        <div class="attrs">
+                            <div class="attr">
+                                <span class="attr-font calendar"></span>
+                                <div class="statistic">
+                                    <h6>成立于</h6>
+                                    <h4>2012年</h4>
+                                </div>
+                            </div>
+                            <div class="attr">
+                                <span class="attr-font location"></span>
+                                <div class="statistic">
+                                    <h6>总部位于</h6>
+                                    <h4>上海</h4>
+                                </div>
+                            </div>
+                            <div class="attr">
+                                <span class="attr-font money"></span>
+                                <div class="statistic">
+                                    <h6>实缴资本金</h6>
+                                    <h4>2亿元人民币</h4>
+                                </div>
+                            </div>
+                            <div class="attr">
+                                <span class="attr-font people"></span>
+                                <div class="statistic">
+                                    <h6>点融人</h6>
+                                    <h4>2600+名</h4>
+                                </div>
+                            </div>
+                            <div class="attr">
+                                <span class="attr-font map"></span>
+                                <div class="statistic">
+                                    <h6>分公司</h6>
+                                    <h4>19个</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">荣誉和资质</h4>
+                        <a href="" class="sidebar link">查看更多</a>
+                    </div>
+                    <div class="card-content">
+                        <div class="honors honors-border">
+                            <div class="honor">
+                                <img src="/images/about-img/honor-hulianxiehuijinrong519.png" alt="">
+                                <p>中国互联网金融协会常务理事</p>
+                            </div>
+                            <div class="honor">
+                                <img src="/images/about-img/honor-hangyexiehuifuhuichang-29.png" alt="">
+                                <p>中国互联网金融协会常务理事</p>
+                            </div>
+                            <div class="honor">
+                                <img src="/images/about-img/honor-security-verify.png" alt="">
+                                <p>中国互联网金融协会常务理事</p>
+                            </div>
+                            <div class="honor">
+                                <img src="/images/about-img/honor-protect-level.png" alt="">
+                                <p>中国互联网金融协会常务理事</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">投资方</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="secondary investor">
+                            <ul>
+                                <li v-for="(item,index) in company" :class="{'active':!index}" @click="investor(index)">
+                                    <a href="javascript:void(0);">{{item.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane" :class="{'active':!index}" v-for="(item,index) in company">
+                                <div class="logo">
+                                    <div></div>
+                                    <img :src="item.img" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p>{{item.content}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">组织架构和部门设置</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="company-structure-img"></div>
+                        <div class="info-employee">
+                            <p class="sub-title">员工情况</p>
+                            <p>点融团队组建综合了技术、法律合规、 风险控制、 后台运营、 财务管理等各要素，力求在使用多维度，高标准的互联网金融行业中做到绩效指标的量化管理。组织中各部门相互配合、互相提升、分工明确，使公司的业务模式高度一致，各种资源综合利用。
+                            </p>
+                            <p>目前法律合规部、财务部、运营部、银行事业部、国际贸易部、市场部、公共事务和创新业务部团队管理大多以扁平化管理为主，指令下达快速，业务活动组织较流畅。
+                            </p>
+                            <p>信贷风险部，技术部，借款人接待团队和出借人客户线上服务团队已建立区域发展模式，实现区域业务有效管辖。</p>
+                        </div>
+                        <div class="info-employee">
+                            <p class="sub-title">员工数据</p>
+                            <p class="data-desc">截止到2017年9月30日，公司总人数2663。</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>员工年龄分布</th>
+                                        <th>员工学历分布</th>
+                                        <th>技术及风控团队员工学历分布</th>
+                                        <th>管理人员学历分布</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div id="ageList"></div>
+                                            <p class="chart-desc">点融是一家朝气蓬勃的公司，我们员工的年龄主要分布在年富力强而又经验丰富的80后，其中70%的员工处于26-40岁，而管理团队多集中在40岁上下，且都具有多年金融或互联网行业工作或创业经验。</p>
+                                            <div class="detail-link"></div>
+                                        </td>
+                                        <td>
+                                            <div id="degreeList"></div>
+                                            <p class="chart-desc">目前80%的点融员工都具有大专及以上学历，其中硕士及以上学历的员工占比5%。</p>
+                                            <div class="detail-link"></div>
+                                        </td>
+                                        <td>
+                                            <div id="techList"></div>
+                                            <p class="chart-desc">点融的核心团队，如风控及技术团队的员工，本科及以上的人员占比87%，其中87%的员工拥有硕士及以上学历。</p>
+                                            <div class="detail-link">
+                                                <a href="" class="link">技术团队详情></a>
+                                                <a href="" class="link">风控团队详情></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="manageList"></div>
+                                            <p class="chart-desc">公司管理团队中具有硕士及以上学历者占比高达64%， 其余也皆具有本科学历，其中大多数都毕业于国内外知名学府，并同时具有国外深造工作及多年团队管理经验。</p>
+                                            <div class="detail-link"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card leadership">
+                    <div class="card-head">
+                        <h4 class="title">管理团队</h4>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="active" id="0">
+                                        <p>
+                                            <span>苏海德</span>
+                                            <span>Soul Htite</span>
+                                        </p>
+                                    </td>
+                                    <td id="1">
+                                        <p>
+                                            <span>郭宇航</span>
+                                            <span>Kevin Guo</span>
+                                        </p>
+                                    </td>
+                                    <td id="2">
+                                        <p>
+                                            <span>罗龙翔</span>
+                                            <span>Longhsiang Loh</span>
+                                        </p>
+                                    </td>
+                                    <td id="3">
+                                        <p>
+                                            <span>邝旭霞</span>
+                                            <span>Xuxia Kuang</span>
+                                        </p>
+                                    </td>
+                                    <td id="4">
+                                        <p>
+                                            <span>李青</span>
+                                            <span>Tracey Li</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="5">
+                                        <p>
+                                            <span>孙健</span>
+                                            <span>Jian Sun</span>
+                                        </p>
+                                    </td>
+                                    <td id="6">
+                                        <p>
+                                            <span>孔令欣</span>
+                                            <span>Ling Kong</span>
+                                        </p>
+                                    </td>
+                                    <td id="7">
+                                        <p>
+                                            <span>潘静</span>
+                                            <span>Pan Jing</span>
+                                        </p>
+                                    </td>
+                                    <td id="8">
+                                        <p>
+                                            <span>冯瑞彬</span>
+                                            <span>Bryan Pang</span>
+                                        </p>
+                                    </td>
+                                    <td id="9">
+                                        <p>
+                                            <span>周莉莉</span>
+                                            <span>Lili Zhou</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="10">
+                                        <p>
+                                            <span>崔艳文</span>
+                                            <span>Yawen Cui</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="leader-info active">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="/images/about-img/soul.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">苏海德</h4>
+                                <p class="job">创始人、首席执行官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">苏海德先生是全球最大网络借贷平台Lending Club的共同创始人、前技术总裁，他一手打造了Lending Club全球最先进、最安全的网络借贷平台系统，2011年，他因为这个系统被世界经济论坛（达沃斯论坛）授予荣誉，获得“科技先锋”的称号。2014年12月，Lending Club成功在美上市，成为全球第一家上市的P2P公司，市值43亿美金。
+
+2012年，苏海德先生选择将Lending Club的成功经验带入中国，创建点融，旨在能为中国人提供一个在线高效的网络借贷平台，降低借款成本，提高投资回报。
+
+在创建Lending Club之前，苏海德先生就职于全球最大的企业软件公司甲骨文，负责设计和开发高可用性的实时在线系统及服务。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Kevin%20Guo.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">郭宇航</h4>
+                                <p class="job">联席董事长</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">2012年，郭宇航先生邀请全球最大网络借贷平台Lending Club共同创始人、前技术总裁苏海德来到中国，共同创立点融。
+
+创立点融之前，郭宇航先生是沪上知名的律师事务所的管理合伙人。律师从业经验10余年，曾为西门子、谷歌、微软等知名跨国互联网公司代理知识产权事务，并为多家风险投资基金担任法律顾问，对互联网、金融与法律均有深刻理解。
+
+郭宇航先生现担任上海市青联委员，黄浦区青联副主席，上海新金融研究院理事、中国政法大学金融创新与互联网金融法治研究中心特聘轮值主任等社会职务，当选第十三届上海IT青年十大新锐，斩获由新华社、上海一行三会及金融办共同授予的‘沪上金融行业领袖’称号。
+
+郭宇航先生是清华五道口金融学院EMBA。作为参与中国互联网金融政策制定讨论的行业专家，与监管部门共同撰写《互联网金融理论、实践与监管》一书，于2014年年底出版。在财新网、新浪财经、零壹财经、未央网等主流媒体开设个人专栏。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Longhsiang%20Loh.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">罗龙翔</h4>
+                                <p class="job">首席执行官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">罗龙翔先生在渣打银行工作近18年，对银行前线销售，风险管理以及公司治理都有着极深的理解，并积累了丰富的国内外经验。
+
+在加入点融网之前，罗龙翔先生任职渣打中国总行副行长、行政总裁办公室总监，主要负责日常行政总裁办公室工作以及协助总裁在公司战略，业务扩展，人力资源，风险管理，行政事务，以及针对中国区发展的决策。
+
+在此之前，罗龙翔先生还历任渣打集团金融机构信贷风险管理总监，兼环球市场部首席信贷总监，以及渣打中国上海分行行长，企业银行联席总裁等重要职务。
+
+罗龙翔先生曾获评“2013年沪上十大金融创新人物”。
+
+作为一位资深金融高级人才，罗龙翔先生同时拥有FRM（Financial Risk Manager）全球金融风险管理领域顶级的权威国际资格认证和美国以及全世界公认金融投资行业最高等级CFA （Chartered Financial Analyst）证书。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Xuxia%20Kuang.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">邝旭霞</h4>
+                                <p class="job">首席运营官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">邝旭霞女士在金融行业和高科技领域拥有近20年的丰富经验。在加入点融网之前，曾任职于美林证券和摩根士坦利公司的投资银行部，主要负责兼并、收购、投资和资产出售，领导和推动了近千亿项目的实施。
+
+早前，邝旭霞女士还曾任职于全球最大的企业软件公司甲骨文，作为核心技术团队负责设计和开发实时在线和协作系统，并获得多个互联网科技专利。
+
+邝旭霞女士毕业于麻省理工学院，拥有经济和计算机数学双学位，并在宾夕法尼亚大学沃顿商学院获得工商管理硕士学位，主修金融学和战略管理。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Tracey%20Li.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">李青</h4>
+                                <p class="job">高管</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">李青女士拥有上海交大国际创业投资师VCS证书，曾任九星资本的总经理，在投资和金融行业拥有超过12年的丰富经验。凭借敏锐的市场洞察力、快速的市场反应能力，以及丰富的团队创建和领导经验，李青女士善于在各不同经济周期把握热点为不同风险承受能力的投资人设计投资策略。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Jian%20Sun.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">孙健</h4>
+                                <p class="job">首席业务官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">孙健先生曾任职于平安集团等大型金融企业的寿险部门和信贷部门，同时曾是数家小额信贷公司的共同创始人，创造了一年内开设近20家分公司、发放小额信贷9.6亿的行业纪录。孙健先生精于信用销售队伍和投资团队的架构及管理，在投资产品设计的和销售风险控制方面也颇有建树。
+
+在加入点融之前，孙健先生参与过多家金融公司的筹建工作，曾分别担任销售总监、市场总监、副总裁等职务。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Ling%20Kong.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">孔令欣</h4>
+                                <p class="job">首席技术官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">孔令欣先生拥有十余年的互联网科技公司战略规划和团队管理经验。最初在美国硅谷的两次创业均赶上了2000年的第一次互联网创业浪潮并带领公司成功上市。此后分别就任于微软和NetApp，负责技术研发和项目管理，成功有效地研发和管理了大型跨国际团队项目，带领研发的多个云平台产品拥有数百万级活跃用户，总收入过亿美金。第三次创业在中国，创立的移动平台获得红杉资本投资和认可。
+
+孔令欣先生拥有美国斯坦福大学的计算机学和心理学双学位，擅长人机交互(HCI)技术，并担任北京大学客座讲师。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Jing%20Pan.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">潘静</h4>
+                                <p class="job">首席市场官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">潘静是点融首席市场官，负责营销和公关工作，建设企业品牌,获取互联网客户。经过三年的耕耘，点融的品牌从起步达到了行业前三的第一梯队位置，并被全球性营销行业杂志Campaign称为“既是中国这个广大市场上值得信赖的投资品牌，也是这个社交媒体盛行市场上的有趣、时髦的品牌”。加入点融之前，她曾在广告科技领域自主创业，是中国最大的广告技术平台易传媒（后被阿里巴巴集团收购）的创始管理团队成员之一。更早之前，潘静女士就职于纽约奥美互动广告集团，负责全球市场的广告战略和活动实施。她亦是奥美集团首位转调到国际市场的中国员工。
+ 
+潘静曾入选Campaign杂志2012年的"亚洲区值得关注的营销女性“和2016年的“亚洲区40位40岁以下的营销人”的榜单。2011年曾作为中国代表团成员之一，在肯尼亚举行的联合国互联网治理大会上，做中国互联网广告行业的合规治理发言。潘静女士具有哈佛商学院MBA学位、北京外国语大学国际商务学士学位。她长期支持贫困地区儿童教育、流浪动物救助的社会公益活动，尤其致力于推广年轻的职场人士利用专业技能做公益的观念及方法。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Bryan%20Feng.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">冯瑞彬</h4>
+                                <p class="job">首席风控官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">冯瑞彬先生在金融机构的运营、营销及风控领域拥有近20年的丰富经验，对个人零售、小微企业、供应链金融等各类信贷风险管理均有着极深的理解。
+
+尤其是对于中小企业信贷风险，冯瑞彬先生曾一手推进渣打中国中小企业信贷管理达到“世界级水平”，包括重新设计并在渣打中国中小企业银行业务中采用最佳的行业做法；冯瑞彬先生亦参与开创富登投资信用担保有限公司（淡马锡控股公司全资子公司）闻名于业内的“信贷工厂”中小企业信贷业务模式。
+
+冯瑞彬先生长期领导信贷风险团队，加入点融之前，历任渣打中国中小企业风险部主管、富登投资信用担保有限公司首席风险官、平安普惠副首席风险官等重要职务。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://www.dianrong.com/mkt/static/image/Lili%20Zhou.png" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">周莉莉</h4>
+                                <p class="job">董事会秘书兼总法律顾问</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">周莉莉女士负责点融的法律和合规事务，通过合规文化培育、制度建设和流程管理等方式，使点融在守法合规和诚信透明方面始终处于行业领先地位，有效保护客户的合法权益。同时，作为董事会秘书，周莉莉女士协助点融董事会积极发挥作用，维护良好的公司治理环境。
+ 
+加入点融之前，周莉莉女士长期服务于汇丰银行，担任董事会秘书兼首席法律顾问等重要职务，全面负责汇丰中国的法务、合规和公司治理相关事宜。周莉莉女士曾在汇丰集团伦敦总部工作，在董事会办公室担任高级管理职务，处理汇丰集团（一家在五地上市的全球性金融集团）的董事会秘书事务。 周莉莉女士也具有多年国际性律师事务所的工作经验。
+ 
+周莉莉女士对于金融机构的设立、业务、营运、法律合规风险管理和公司治理有深入了解和丰富经验；对于中国大陆、香港、英国、欧盟和美国对上市公司的监管要求有良好理解和处理经验。
+ 
+周莉莉女士毕业于复旦大学国际经济法系。她是上海国际仲裁中心的仲裁员。</p>
+                            </div>
+                        </div>
+                        <div class="leader-info">
+                            <div class="col-1-5 text-center">
+                                <div class="avatar">
+                                    <img src="https://s.dianrong.com/static/image/cuiyawen.jpg" alt="" class="avatar-img">
+                                </div>
+                                <h4 class="name">崔亚文</h4>
+                                <p class="job">首席财务官</p>
+                            </div>
+                            <div class="col-4-5 info">
+                                <p class="desc">崔亚文拥有超过十年的资本运营经验，以及二十年财务管理经验。在加入点融之前，曾就职于阿里体育等大型民营企业及中广核铀业等大型央企任CFO职位。
+
+崔亚文在多个资本市场拥有丰富经验，熟悉美国公认会计准则等多国会计准则及相关规则，曾多次设计完成相关企业在中国香港，澳大利亚、加拿大以及美国等地区或国家上市；投融资累计总规模超过30亿美元。其中，2016年在担任阿里体育有限公司任CFO期间，崔亚文完成了阿里体育的A轮融资。2008年-2013年在中广核铀业有限公司期间，崔亚文则全面负责集团资本运作事宜，包括海外IPO和APO以及企业并购。
+
+崔亚文毕业于中央财经大学，拥有英国赫尔大学数学金融硕士学位，以及英国伯明翰大学MBA学位，同时拥有加拿大注册会计师资质。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">公司治理</h4>
+                    </div>
+                    <div class="card-content corporate">
+                        <div class="intro">
+                            <p>上海点荣金融信息服务有限责任公司，通过互联网行业通行的VIE(Variable Interest Entities 可变利益实体)架构，已引入海外多家知名投资机构的投资。公司并无占多数股权或控制权的实际控制人。</p>
+                            <p>公司董事会目前有7名董事，除两名创始人以外，其余均为海外投资人委派的代表，在国际互联网金融领域具有丰富的投资和管理经验。</p>
+                            <p>公司的股东、董事会和监事按照章程履行各自职责。董事会定期召开会议，听取管理层的报告，监督公司的营运情况，并决定公司的重大事项。特别重大事项按照章程的规定提交股东批准。监事监督董事会和管理层的履职情况。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card dashiji">
+                    <div class="card-head">
+                        <h4 class="title">点融大事记</h4>
+                    </div>
+                    <div class="card-content dashiji-content">
+                        <div class="control-next">
+                            <span class="fa fa-chevron-right Suer-1"></span>
+                        </div>
+                        <div class="control-next-left">
+                            <span class="fa fa-chevron-left Suer-2"></span>
+                        </div>
+                        <div class="events">
+                            <div class="slide">
+                                <div class="event-ng-scope-odd">
+                                    <h4 class="ng-binding-h4">2017.08.02</h4>
+                                    <p class="ng-binding-p">完成2.2亿美元D轮融资，融资方为新加坡政府投资公司、中民租赁、及韩国Simone投资</p>
+                                    <div class="btn-box"></div>
+                                    <div class="btn-box-1"></div>
+                                </div>
+                                <div class="event-ng-scope-odd-1">
+                                    <h4 class="ng-binding-h4">2017.03.08</h4>
+                                    <p class="ng-binding-p">和富士康旗下金融平台富金通共同推出“Chained Finance“的区块链金融平台</p>
+                                    <div class="btn-box"></div>
+                                    <div class="btn-box-1"></div>
+                                </div>
+                                <div class="crossline"></div>
+                                <div class="event-ng-scope-even">
+                                    <h4 class="ng-binding-h4-4">2017.08.30</h4>
+                                    <p class="ng-binding-p">点融携手FinEX Asia推出亚洲首个金融科技资产管理平台</p>
+                                    <div class="btn-box-a"></div>
+                                    <div class="btn-box-b"></div>
+                                </div>
+                                <div class="event-ng-scope-even-1">
+                                    <h4 class="ng-binding-h4-4">2017.06.28</h4>
+                                    <p class="ng-binding-p">作为网贷信息服务中介平台代表，点融成为中国互联网金融协会区块链研究工作组的成员单位</p>
+                                    <div class="btn-box-a"></div>
+                                    <div class="btn-box-b"></div>
+                                </div>
+                                <div class="event-in-events-2">
+                                    <h4 class="ng-binding-h4-4">2016.12.01</h4>
+                                    <p class="ng-binding-p">点融加入全球区块链联盟Hyperledger，成国内首家加盟的网贷信息服务中介平台</p>
+                                    <div class="btn-box-a"></div>
+                                    <div class="btn-box-b"></div>
+                                </div>
+                                <div class="event-ng-scope-odd-2">
+                                    <h4 class="ng-binding-h4-4">2016.03.15</h4>
+                                    <p class="ng-binding-p">当选上海市互联网金融行业协会副会长单位</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+
+                                </div>
+                                <div class="event-ng-scope-odd-3">
+                                    <h4 class="ng-binding-h4-4">2015.09.28</h4>
+                                    <p class="ng-binding-p">与中民租赁、尚乘集团成立合资公司，携手打造全球首家跨境资产配置平台</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+                                </div>
+                                <div class="event-ng-scope-odd-4">
+                                    <h4 class="ng-binding-h4-4">2016.03.25</h4>
+                                    <p class="ng-binding-p">中国互联网金融协会成立，点融成为常务理事单位</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+                                </div>
+                                <div class="event-ng-scope-even-3">
+                                    <h4 class="ng-binding-h4-4">2015.11.17</h4>
+                                    <p class="ng-binding-p">推出国内首个餐饮业专属借贷信息项目集合“大食贷”</p>
+                                    <div class="btn-box-f"></div>
+                                    <div class="btn-box-e"></div>
+                                </div>
+                                <div class="event-ng-scope-even-4">
+                                    <h4 class="ng-binding-h4-4">2016.12.01</h4>
+                                    <p class="ng-binding-p">点融加入全球区块链联盟Hyperledger，成国内首家加盟的网贷信息服务中介平台</p>
+                                    <div class="btn-box-f"></div>
+                                    <div class="btn-box-e"></div>
+                                </div>
+                                <div class="contele-odd">
+                                    <h4 class="ng-binding-h4-4">2015.07.14</h4>
+                                    <p class="ng-binding-p">利息自动复投功能上线</p>
+                                    <div class="ng-btnA"></div>
+                                    <div class="ng-btn-C"></div>
+                                </div>
+                                <div class="contele-odd-1">
+                                    <h4 class="ng-binding-h4-4">2015.06.04</h4>
+                                    <p class="ng-binding-p">与芝麻信用达成全面合作协议</p>
+                                    <div class="ng-btnA"></div>
+                                    <div class="ng-btn-C"></div>
+                                </div>
+                                <div class="contele-odd-2">
+                                    <h4 class="ng-binding-h4-4">2015.08.20</h4>
+                                    <p class="ng-binding-p">完成C轮融资（2.07亿美）元，由渣打直投和CFF领投。</p>
+                                    <div class="ng-btn-B"></div>
+                                    <div class="ng-btn-9"></div>
+                                </div>
+                                <div class="contele-odd-3">
+                                    <h4 class="ng-binding-h4-4">2016.07.02</h4>
+                                    <p class="ng-binding-p">成为率先通过国际信息安全管理体系认证的网贷信息服务中介平台</p>
+                                    <div class="ng-btn-B"></div>
+                                    <div class="ng-btn-9"></div>
+                                </div>
+                                <div class="contele-odd-4">
+                                    <h4 class="ng-binding-h4-4">2015.03</h4>
+                                    <p class="ng-binding-p">点融上线两周年</p>
+                                    <div class="ng-btn-B"></div>
+                                    <div class="ng-btn-9"></div>
+                                </div>
+                                <!--测试-->
+                                <div class="contele-add-1">
+                                    <h4 class="ng-binding-h4-4">2015.01</h4>
+                                    <p class="ng-binding-p">点融获得老虎环球基金的融资</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+
+                                </div>
+                                <div class="contele-add-2">
+                                    <h4 class="ng-binding-h4-4">2014.11</h4>
+                                    <p class="ng-binding-p">“红筹之父”梁伯韬以个人身份投资点融</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+                                </div>
+                                <div class="contele-add-3">
+                                    <h4 class="ng-binding-h4-4">2014.06</h4>
+                                    <p class="ng-binding-p">点融推出技术创新型项目“团团赚”</p>
+                                    <div class="btn-box-c"></div>
+                                    <div class="btn-box-d"></div>
+                                </div>
+                                <div class="contele-add-4">
+                                    <h4 class="ng-binding-h4-4">2014.12</h4>
+                                    <p class="ng-binding-p">点融成为中国小贷联盟P2P行业执行委员成员</p>
+                                    <div class="btn-box-f"></div>
+                                    <div class="btn-box-e"></div>
+                                </div>
+                                <div class="contele-add-5">
+                                    <h4 class="ng-binding-h4-4">2014.09</h4>
+                                    <p class="ng-binding-p">点融发布“团团赚”季报，投资金额过亿，月复合增长率达134%</p>
+                                    <div class="btn-box-f"></div>
+                                    <div class="btn-box-e"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">分支机构</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="secondary">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="active">华东地区</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">华南地区</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">东北区域</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">华中地区</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">西南区域</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content offices active">
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>上海市黄浦区斜土路359号1号楼7层1-701、1-702室（产证为17号楼7层1-701、1-702室）</p>
+                                            <p>
+                                                <span>021-53313666</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>上海市黄浦区斜土路359号1号楼7层1-701、1-702室（产证为17号楼7层1-701、1-702室）</p>
+                                            <p>
+                                                <span>021-53313666</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>上海市黄浦区斜土路359号1号楼7层1-701、1-702室（产证为17号楼7层1-701、1-702室）</p>
+                                            <p>
+                                                <span>021-53313666</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>上海市黄浦区斜土路359号1号楼7层1-701、1-702室（产证为17号楼7层1-701、1-702室）</p>
+                                            <p>
+                                                <span>021-53313666</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content offices">
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>东莞市东城区火炼树东莞大道台商大厦1单元3611-3614房</p>
+                                            <p>
+                                                <span>0769-26268765</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>佛山市禅城区汾江南路6号一座1201、1211、1212、1213</p>
+                                            <p>
+                                                <span>0757-88035161</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>广州市天河区华夏路16号1201房，1202房，1212房</p>
+                                            <p>
+                                                <span>020-62315607</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>海南省海口市龙华区金龙路南侧兴业银行大厦九层C房、D房、E房</p>
+                                            <p>
+                                                <span>0898-65790502</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>南宁市青秀区东葛路118号青秀万达广场西1栋2501、2502、2503、2521室</p>
+                                            <p>
+                                                <span>0771-5572386</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>泉州市丰泽区宝洲路浦西万达甲级写字楼1B塔B1801、B1808、B1809</p>
+                                            <p>
+                                                <span>0595-29017178</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>深圳市福田区深南大道与泰然九路交界东南本元大厦15A</p>
+                                            <p>
+                                                <span>0755-28332368</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>中山市石岐区中山二路4号星汇湾1幢12层05卡</p>
+                                            <p>
+                                                <span>0760-88306466</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content offices">
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>辽宁省大连市沙河口区黄河路620号19楼A-B单元</p>
+                                            <p>
+                                                <span>0411-39779601</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>沈阳市沈河区惠工街10号28层04-06单元</p>
+                                            <p>
+                                                <span>024-31213217</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content offices">
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>武昌区中北路31号办公大楼（2009-093）1-24层1室</p>
+                                            <p>
+                                                <span>027-87123466</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>长沙市开福区中山路589号开福万达广场商业综合体19层19004</p>
+                                            <p>
+                                                <span>0731-89838010</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content offices">
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>成都市青羊区提督街1号1栋27层5、6号</p>
+                                            <p>
+                                                <span>028-61989669</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>四川省宜宾市翠屏区南岸酒都路中段59号</p>
+                                            <p>
+                                                <span>0831-7189600</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="office">
+                                    <div class="office-img">
+                                        <img src="/images/about-img/5a1cd1b4c77463410001833c.jpg" alt="">
+                                    </div>
+                                    <div class="office-info">
+                                        <div>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="adress">
+                                            <p>重庆市江北区观音桥步行街2号附13号13-1、13-2、13-9、13-10</p>
+                                            <p>
+                                                <span>023-67711900</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">联系我们</h4>
+                    </div>
+                    <div class="card-content call">
+                        <div class="information">
+                            <h2>客服电话</h2>
+                            <p>客服电话：10109188</p>
+                            <p>客服邮件：support@dianrong.com</p>
+                            <p>微信公众服务号：dianrongvip</p>
+                            <p>传真号码：63232100</p>
+                        </div>
+                        <div class="information">
+                            <h2>客服电话</h2>
+                            <p>客服电话：10109188</p>
+                            <p>客服邮件：support@dianrong.com</p>
+                            <p>微信公众服务号：dianrongvip</p>
+                            <p>传真号码：63232100</p>
+                        </div>
+                        <div class="information">
+                            <h2>客服电话</h2>
+                            <p>客服电话：10109188</p>
+                            <p>客服邮件：support@dianrong.com</p>
+                            <p>微信公众服务号：dianrongvip</p>
+                            <p>传真号码：63232100</p>
+                        </div>
+                        <div class="information">
+                            <h2>客服电话</h2>
+                            <p>客服电话：10109188</p>
+                            <p>客服邮件：support@dianrong.com</p>
+                            <p>微信公众服务号：dianrongvip</p>
+                            <p>传真号码：63232100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template> 
+        <!-- 平台优势 -->
+        <template id="safety">
+            <div class="safety">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">平台优势</h4>
+                    </div>
+                    <div class="card-content">
+                        <img class="banner" src="/images/about-img/banner-img.png" alt="">
+                        <div class="billborads">
+                            <div class="col-8-24 billborad no-gap">
+                                <img class="col-1-5" src="/images/about-img/platform-security-img-one.png" alt="">
+                                <div class="col-3-5">
+                                    <h5>信息中心，非信用中介</h5>
+                                    <p>不介入借贷交易，也不替出借人分担借款人的信用风险</p>
+                                </div>
+                            </div>
+                            <div class="col-8-24 billborad no-gap">
+                                <img class="col-1-5" src="/images/about-img/platform-security-img-one.png" alt="">
+                                <div class="col-3-5">
+                                    <h5>信息中心，非信用中介</h5>
+                                    <p>不介入借贷交易，也不替出借人分担借款人的信用风险</p>
+                                </div>
+                            </div>
+                            <div class="col-8-24 billborad no-gap">
+                                <img class="col-1-5" src="/images/about-img/platform-security-img-one.png" alt="">
+                                <div class="col-3-5">
+                                    <h5>信息中心，非信用中介</h5>
+                                    <p>不介入借贷交易，也不替出借人分担借款人的信用风险</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">技术保障</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="col-6-24 billborad">
+                            <img src="/images/about-img/skill-one.png" alt="">
+                            <h5>业界领先的核心功能</h5>
+                            <p>自主开发的电子钱包、用户交易体系，结算清算等底层功能</p>
+                        </div>
+                        <div class="col-6-24 billborad">
+                            <img src="/images/about-img/skill-one.png" alt="">
+                            <h5>业界领先的核心功能</h5>
+                            <p>自主开发的电子钱包、用户交易体系，结算清算等底层功能</p>
+                        </div>
+                        <div class="col-6-24 billborad">
+                            <img src="/images/about-img/skill-one.png" alt="">
+                            <h5>业界领先的核心功能</h5>
+                            <p>自主开发的电子钱包、用户交易体系，结算清算等底层功能</p>
+                        </div>
+                        <div class="col-6-24 billborad">
+                            <img src="/images/about-img/skill-one.png" alt="">
+                            <h5>业界领先的核心功能</h5>
+                            <p>自主开发的电子钱包、用户交易体系，结算清算等底层功能</p>
+                        </div>
+                        <p class="technology-tip">为了保障业务的可靠性和连续性，点融参照了GBT-20988 2007国家标准实现了两地三中心的技术架构，即生产中心通过同步镜像至同城灾备中心，同城灾备中心通过异步复制至异地数据中心，保证了数据的零丢失以及远程集群支持。在生产中心及其同城灾备中心内部分别建立了本地容灾系统，保证交易数据在多个数据中心同时存在多份拷贝。
+                        </p>
+                        <p class="technology-tip no-border">目前点融已获得国家信息系统安全保护三级认证和国际ISO27001信息安全管理体系认证,可为用户提供业内首屈一指的技术安全保障。
+                        </p>
+                    </div>
+                </div>
+                <div class="card source-assets">
+                    <div class="card-head">
+                        <h4 class="title">信贷资产来源</h4>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>
+                                <p>个人及中小企业向点融申请。</p>
+                            </li>
+                            <li>
+                                <p>拥有线上渠道和资源的合作伙伴，根据具体场景提供特定的信贷类业务机会。</p>
+                            </li>
+                        </ul>
+                        <div class="source-banner"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">资金安全</h4>
+                    </div>
+                    <div class="card-content">
+                        <p class="desc">点融已在上海银行开立资金存管账户，根据法律法规以及银行的存管业务规则，将出借人和借款人客户的交易资金、第三方保证金等所有与网络借贷交易业务相关的资金均纳入银行的存管。存管银行为出借人和借款人客户开立存管子账户，根据客户通过点融进行的交易信息，对于客户的存管子账户进行充值、提现、融资项目的投资、放款、还款、代偿、支付服务费等相关操作。点融与存管银行定期进行对账，确保资金流和信息流操作相符。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">法律保障</h4>
+                    </div>
+                    <div class="card-content">
+                        <img class="banner natural" src="/images/about-img/legal-protection.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">隐私保护</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/privacy-one.png" alt="">
+                            <h5>全程加密</h5>
+                            <p>前后端之间加密https传输，用户的敏感信息在数据库中全部加密存储</p>
+                        </div>
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/privacy-one.png" alt="">
+                            <h5>全程加密</h5>
+                            <p>前后端之间加密https传输，用户的敏感信息在数据库中全部加密存储</p>
+                        </div>
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/privacy-one.png" alt="">
+                            <h5>全程加密</h5>
+                            <p>前后端之间加密https传输，用户的敏感信息在数据库中全部加密存储</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template> 
+        <!-- 运营数据 -->
+        <template id="operation">
+            <div class="operation">
+                <div class="card summary">
+                    <div class="card-content">
+                        <div class="logo">
+                            <div class="col-3-5 title">平台实时数据</div>
+                            <div class="col-2-5 timestamp text-right">
+                                <span>2017-12-05</span>
+                                <span>(部分数据可能有延迟)</span>
+                            </div>
+                        </div>
+                        <div class="text-left" v-for="item in operation">
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.users}}</p>
+                                <p class="name">注册用户数</p>
+                            </div>
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.invest}}</p>
+                                <p class="name">累计投资人次</p>
+                            </div>
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.amountInvest}}</p>
+                                <p class="name">累计投资额(元)</p>
+                            </div>
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.earning}}</p>
+                                <p class="name">用户累计赚取(元)</p>
+                            </div>
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.corpus}}</p>
+                                <p class="name">已返还本金(元)</p>
+                            </div>
+                            <div class="col-8-24 text-center">
+                                <p class="value" id="registers">{{item.loan}}</p>
+                                <p class="name">已还清贷款(元)</p>
+                            </div>
+                        </div>
+                        <div class="accumulate-invest-amount">
+                            <div class="sub-title accumulate-title">累计投资额</div>
+                            <div id="tradeAmountByMonth" class="echarts-container"></div>
+                        </div>
+                        <div class="data-distribution">
+                            <div class="col-12-24 left">
+                                <div class="sub-title">投资金额分布</div>
+                                <div id="insertData" class="echarts-container"></div>
+                            </div>
+                            <div class="col-12-24">
+                                <div class="sub-title right-sub">注册用户分布</div>
+                                <div id="registerCountByCity" class="echarts-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card summary loan-summary">
+                    <div class="card-head">
+                        <h4 class="title">交易数据统计</h4>
+                        <div class="sidebar">数据截止至：
+                        
+                        <span>2017-10-31</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="text-left">
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card summary loan-summary">
+                    <div class="card-head">
+                        <h4 class="title">借款数据统计</h4>
+                        <div class="sidebar">数据截止至：
+                        
+                        <span>2017-10-31</span></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="text-left">
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">562.32</p>
+                                <p class="name">最大单户借款余额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                            <div class="col-8-24 text-center ng-scope">
+                                <p class="value">4488186.12</p>
+                                <p class="name">累计成交金额(万元)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card summary loan-summary">
+                    <div class="card-head">
+                        <h4 class="title">借款数据统计</h4>
+                    </div>
+                    <div class="card-content report-content">
+                        <div class="col-8-24 text-left ng-scope">
+                            <a href="" class="report-link">点融2017年10月运营月报</a>
+                        </div>
+                        <div class="col-8-24 text-left ng-scope">
+                            <a href="" class="report-link">点融2017年10月运营月报</a>
+                        </div>
+                        <div class="col-8-24 text-left ng-scope">
+                            <a href="" class="report-link">点融2017年10月运营月报</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- 银行存管 -->
+        <template id="depository">
+            <div class="depository">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">什么是存管</h4>
+                    </div>
+                    <div class="card-content">
+                        <p class="desc">2016年8月24日，由银监会、工信部、公安部、网信办联合公布的《网络信息中介机构业务活动管理暂行办法》,要求网贷信息中介平台将交易资金存管在银行，其原理是通过银行做到交易资金和交易信息分开管理，将平台与资金分离，以杜绝资金被平台挪用的风险。</p>
+                        <a href="" class="link">查看点融与上海银行存管协议</a>
+                        <div class="depository-banner"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">银行存管有什么好处</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/depository-one.png" alt="">
+                            <h5>银行监督</h5>
+                            <p>用户自己操作资金出入，银行监督和执行</p>
+                        </div>
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/depository-two.png" alt="">
+                            <h5>交易真实</h5>
+                            <p>银行根据借贷双方真实交易信息划拨资金</p>
+                        </div>
+                        <div class="col-8-24 wide-gap billborad">
+                            <img src="/images/about-img/depository-three.png" alt="">
+                            <h5>隔离平台</h5>
+                            <p>平台无法触碰资金，杜绝挪用和资金池</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- 风控策略 -->
+        <template id="risk">
+            <div class="risk">
+                <div class="card risk-control">
+                    <div class="card-head">
+                        <h4 class="title">风控流程</h4>
+                    </div>
+                    <div class="card-content">
+                        <img src="/images/about-img/risk-control-progress.png" alt="" class="risk-flow-banner">
+                        <div class="billborads">
+                            <div class="col-8-24 billborad text-center">
+                                <h4 class="header header-1">发布借款</h4>
+                                <div class="content">
+                                    <i class="icon icon-1"></i>
+                                    <dl class="text-left">
+                                        <dt>来自于分支机构/线上申请的信贷资产</dt>
+                                        <dd>信贷审查及评分</dd>
+                                        <dd>反欺诈核查</dd>
+                                        <dd>来自于合作渠道的信贷资产</dd>
+                                        <dd>尽职调查</dd>
+                                        <dd>信贷审查</dd>
+                                        <dt class="last last-2">信贷审查通过或拒绝</dt>
+                                        <dt class="last last-1">合作渠道审查通过或拒绝</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="col-8-24 billborad text-center">
+                                <h4 class="header header-1">发布借款</h4>
+                                <div class="content">
+                                    <i class="icon icon-1"></i>
+                                    <dl class="text-left">
+                                        <dt>来自于分支机构/线上申请的信贷资产</dt>
+                                        <dd>信贷审查及评分</dd>
+                                        <dd>反欺诈核查</dd>
+                                        <dd>来自于合作渠道的信贷资产</dd>
+                                        <dd>尽职调查</dd>
+                                        <dd>信贷审查</dd>
+                                        <dt class="last last-2">信贷审查通过或拒绝</dt>
+                                        <dt class="last last-1">合作渠道审查通过或拒绝</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="col-8-24 billborad text-center">
+                                <h4 class="header header-1">发布借款</h4>
+                                <div class="content">
+                                    <i class="icon icon-1"></i>
+                                    <dl class="text-left">
+                                        <dt>来自于分支机构/线上申请的信贷资产</dt>
+                                        <dd>信贷审查及评分</dd>
+                                        <dd>反欺诈核查</dd>
+                                        <dd>来自于合作渠道的信贷资产</dd>
+                                        <dd>尽职调查</dd>
+                                        <dd>信贷审查</dd>
+                                        <dt class="last last-2">信贷审查通过或拒绝</dt>
+                                        <dt class="last last-1">合作渠道审查通过或拒绝</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card risk-strategy">
+                    <div class="card-head">
+                        <h4 class="title">风险管理战略</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="col-6-24 intro">
+                            <p>点融的整体风控体系,将互联网科技的大数据应用、科技化侦测管理手段与银行、跨国金融和咨询机构的风控体系相结合，同时依据相应区域小微的市场需求、客户画像和对资产表现的分析，搭建了针对消费信贷和中小微贷款的精准、快速、便捷的融资平台和风险系统，建立了从客户准入到风险评级、反欺诈、贷后管理和催收，完整高效的端对端风险管理流程。</p>
+                        </div>
+                        <div class="col-6-24">
+                            <div class="strategy-banner"></div>
+                        </div>
+                        <div class="col-6-24">
+                            <div class="process">
+                                <h5 class="header">点融风险管理过程(7P)</h5>
+                                <div class="items">
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6-24">
+                            <div class="items items2">
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="name">产品和流程(Product&amp;Process)</p>
+                                        <p class="info">产品设计及流程规划</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">风险管理架构</h4>
+                    </div>
+                    <div class="card-content">
+                        <img class="banner natural" src="/images/about-img/risk-banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- 点融动态 -->
+        <template id="news">
+            <div class="news">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">资金安全</h4>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li v-for="item in news">
+                                <div class="article">
+                                    <div class="img-wrapper">
+                                        <img :src="item.img" alt="">
+                                    </div>
+                                    <div class="summary">
+                                        <p class="title">
+                                            <a href="">{{item.title}}</a>
+                                        </p>
+                                        <p class="timestamp">{{item.time}}</p>
+                                        <p class="content">{{item.content}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="page-container">
+                            <div>
+                                <div class="sl-page">
+                                    <ul>
+                                        <li @click="prev"><span><</span></li>
+                                        <li class="active" @click="pageDown(0)"><span>1</span></li>
+                                        <li @click="pageDown(1)"><span>2</span></li>
+                                        <li @click="pageDown(2)"><span>3</span></li>
+                                        <li @click="pageDown(3)"><span>4</span></li>
+                                        <li @click="pageDown(4)"><span>5</span></li>
+                                        <li @click="next"><span>></span></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- 媒体报道 -->
+        <template id="media">
+            <div class="media">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">媒体报道</h4>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li v-for="item in media">
+                                <div class="article">
+                                    <div class="img-wrapper">
+                                        <img :src="item.img" alt="">
+                                    </div>
+                                    <div class="summary">
+                                        <p class="title">
+                                            <a href="">{{item.title}}</a>
+                                        </p>
+                                        <p class="timestamp">{{item.time}}</p>
+                                        <p class="content" style="line-height:24px">{{item.content}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="page-container">
+                            <div>
+                                <div class="sl-page">
+                                    <ul>
+                                        <li @click="prev"><span><</span></li>
+                                        <li class="active" @click="pageDown(0)"><span>1</span></li>
+                                        <li @click="pageDown(1)"><span>2</span></li>
+                                        <li @click="pageDown(2)"><span>3</span></li>
+                                        <li @click="pageDown(3)"><span>4</span></li>
+                                        <li @click="pageDown(4)"><span>5</span></li>
+                                        <li @click="next"><span>></span></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- 法律法规 -->
+        <template id="laws">
+            <div class="laws">
+                <div class="content">
+                    <h4 class="text-center">中国银行业监督管理委员会 中华人民共和国工业和信息化部 中华人民共和国公安部 国家互联网信息办公室令</h4>
+                    <h4 class="text-center">2016年第1号</h4>
+                    <p>为加强对网络借贷信息中介机构业务活动的监督管理，促进网络借贷行业健康发展，依据《中华人民共和国民法通则》、《中华人民共和国公司法》、《中华人民共和国合同法》等法律法规，中国银监会、工业和信息化部、公安部、国家互联网信息办公室制定了《网络借贷信息中介机构业务活动管理暂行办法》。经国务院批准，现予公布，自公布之日起施行。</p>
+                    <p class="text-right">中国银行业监督管理委员会主席：尚福林</p>
+                    <p class="text-right">中华人民共和国工业和信息化部部长：苗圩</p>
+                    <p class="text-right">中华人民共和国公安部部长：郭声琨</p>
+                    <p class="text-right">国家互联网信息办公室主任：徐麟</p>
+                    <p class="text-right version">2016年8月17日</p>
+                </div>
+                <h2 class="protocol-head text-center">网络借贷信息中介机构业务活动管理暂行办法</h2>
+                <div class="content">
+                    <div>
+                        <ol class="first-num-ol">
+                            <li>
+                                <h6>第一章　总　则</h6>
+                                <ol>
+                                    <li>
+                                        <p> 第一条　为规范网络借贷信息中介机构业务活动，保护出借人、借款人、网络借贷信息中介机构及相关当事人合法权益，促进网络借贷行业健康发展，更好满足中小微企业和个人投融资需求，根据《关于促进互联网金融健康发展的指导意见》提出的总体要求和监管原则，依据《中华人民共和国民法通则》、《中华人民共和国公司法》、《中华人民共和国合同法》等法律法规，制定本办法。</p>
+                                    </li>
+                                    <li>
+                                        <p>第二条　在中国境内从事网络借贷信息中介业务活动，适用本办法，法律法规另有规定的除外。<br>本办法所称网络借贷是指个体和个体之间通过互联网平台实现的直接借贷。个体包含自然人、法人及其他组织。网络借贷信息中介机构是指依法设立，专门从事网络借贷信息中介业务活动的金融信息中介公司。该类机构以互联网为主要渠道，为借款人与出借人（即贷款人）实现直接借贷提供信息搜集、信息公布、资信评估、信息交互、借贷撮合等服务。<br>本办法所称地方金融监管部门是指各省级人民政府承担地方金融监管职责的部门。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>第三条　网络借贷信息中介机构按照依法、诚信、自愿、公平的原则为借款人和出借人提供信息服务，维护出借人与借款人合法权益，不得提供增信服务，不得直接或间接归集资金，不得非法集资，不得损害国家利益和社会公共利益。<br>借款人与出借人遵循借贷自愿、诚实守信、责任自负、风险自担的原则承担借贷风险。网络借贷信息中介机构承担客观、真实、全面、及时进行信息披露的责任，不承担借贷违约风险。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>第四条　按照《关于促进互联网金融健康发展的指导意见》中“鼓励创新、防范风险、趋利避害、健康发展”的总体要求和“依法监管、适度监管、分类监管、协同监管、创新监管”的监管原则，落实各方管理责任。国务院银行业监督管理机构及其派出机构负责制定网络借贷信息中介机构业务活动监督管理制度，并实施行为监管。各省级人民政府负责本辖区网络借贷信息中介机构的机构监管。工业和信息化部负责对网络借贷信息中介机构业务活动涉及的电信业务进行监管。公安部牵头负责对网络借贷信息中介机构的互联网服务进行安全监管，依法查处违反网络安全监管的违法违规活动，打击网络借贷涉及的金融犯罪及相关犯罪。国家互联网信息办公室负责对金融信息服务、互联网信息内容等业务进行监管。</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h6>第二章　备案管理</h6>
+                                <ol>
+                                    <li>
+                                        <p>第五条　拟开展网络借贷信息中介服务的网络借贷信息中介机构及其分支机构，应当在领取营业执照后，于10个工作日以内携带有关材料向工商登记注册地地方金融监管部门备案登记。<br>地方金融监管部门负责为网络借贷信息中介机构办理备案登记。地方金融监管部门应当在网络借贷信息中介机构提交的备案登记材料齐备时予以受理，并在各省（区、市）规定的时限内完成备案登记手续。备案登记不构成对网络借贷信息中介机构经营能力、合规程度、资信状况的认可和评价。<br>地方金融监管部门有权根据本办法和相关监管规则对备案登记后的网络借贷信息中介机构进行评估分类，并及时将备案登记信息及分类结果在官方网站上公示。<br>网络借贷信息中介机构完成地方金融监管部门备案登记后，应当按照通信主管部门的相关规定申请相应的电信业务经营许可；未按规定申请电信业务经营许可的，不得开展网络借贷信息中介业务。<br>网络借贷信息中介机构备案登记、评估分类等具体细则另行制定。</p>
+                                    </li>
+                                    <li>
+                                        <p>第六条　开展网络借贷信息中介业务的机构，应当在经营范围中实质明确网络借贷信息中介，法律、行政法规另有规定的除外。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>第七条　网络借贷信息中介机构备案登记事项发生变更的，应当在5个工作日以内向工商登记注册地地方金融监管部门报告并进行备案信息变更。
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>第八条　经备案的网络借贷信息中介机构拟终止网络借贷信息中介服务的，应当在终止业务前提前至少10个工作日，书面告知工商登记注册地地方金融监管部门，并办理备案注销。<br>经备案登记的网络借贷信息中介机构依法解散或者依法宣告破产的，除依法进行清算外，由工商登记注册地地方金融监管部门注销其备案。</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="text-right version">银监会、工业和信息化部、公安部、国家互联网信息办公室联合发布《网络借贷信息中介机构业务活动管理暂行办法》</p>
+                </div>
+            </div>
+        </template>
+        <!-- 合作伙伴 -->
+        <template id="partner">
+            <div class="partner">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="title">主要合作伙伴</h4>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li v-for="(item,index) in partner" @click="partnerToggle(index)">
+                                <p>
+                                    <span :class="{'selected':!index}">{{item.title}}</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="dr-tab-pane" :class="{'active':!index}" v-for="(item,index) in partner">
+                            <img :src="item.img" alt="">
+                            <p>{{item.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </main>
+    <% include ./foot %>
+    
+</body>
+    <script src="/js/about-js/vue.js"></script>
+    <script src="/js/about-js/vue-resource.min.js"></script>
+    <script src="/js/about-js/vue-router.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script src="/js/about-js/about.js" async></script>
+    <script>
+        /*(function(){
+            $.ajax({
+                type:"GET",
+                url:"http://127.0.0.1:3000/about/company",
+                data:{
+                    port:3000
+                },
+                success:function(data,textStatus){
+
+                }
+            });
+        })();*/
+    </script>
+</html>

@@ -1,0 +1,1054 @@
+/*基础样式*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+a:visited,a:hover,a:active{
+    text-decoration:none;
+}
+/* 头部 */
+.about-header{
+    height:109px;
+    background:#eee;
+}
+body{
+    background:#f5f5f5;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../../myfont/iconfont.eot');
+  src: url('../../myfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../myfont/iconfont.woff') format('woff'),
+  url('../../myfont/iconfont.ttf') format('truetype'),
+  url('../../myfont/iconfont.svg#iconfont') format('svg');
+}
+/*主体*/
+#about-main{
+    width:100%;
+    font-size:14px;
+    font-family:proxima-nova,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Wenquanyi Micro Hei,WenQuanYi Micro Hei Mono,WenQuanYi Zen Hei,Apple LiGothic Medium,SimHei,ST Heiti,WenQuanYi Zen Hei Sharp;
+    color:#4a4a4a;
+    line-height:1.72222;
+}
+.about-wrapper{
+    width:1140px;
+    margin:0 auto;
+}
+.main-about-us{
+    padding:0 0 60px;
+}
+.main-about-us .about-nav>ul{
+    margin:14px 0 20px;
+    padding:4px 0 0 0;
+}
+.main-about-us .about-nav>ul>li{
+    display:inline-block;
+    margin:0 22px 0 0;
+    padding:8px 14px 2px;
+}
+.main-about-us .about-nav>ul>li a{
+    color:#666;
+    transition:.25s;
+    -webkit-transition:.25s;
+}
+.main-about-us .about-nav>ul>li.active{
+    border-bottom:2px solid #00bc8d;
+}
+.main-about-us .about-nav>ul>li.active a{
+    color:#00bc8d;
+}
+/*详情*/
+/*关于点融*/
+.about-scope .card:first-child{
+    margin-top:0;
+}
+.about-scope .card{
+    margin-top:22px;
+    padding:0;
+    border:1px solid #e4e4e4;
+    background:#fff;
+}
+.card-head{
+    position:relative;
+    padding:22px 22px 18px;
+    border-bottom:1px solid #e4e4e4;
+}
+.card-head .title{
+    margin:0;
+    font-size:20px;
+    line-height:1;
+    font-weight:300;
+    color:#333;
+}
+.about-scope .card-head>.sidebar{
+    position:absolute;
+    top:20px;
+    right:22px;
+    line-height:24px;
+    color:#00bc8d;
+    font-size:16px;
+    cursor:pointer;
+}
+.card-content{
+    padding:22px 21px;
+}
+.card-content>img{
+    display:block;
+    margin:0 auto;
+    width:100%;
+}
+.company .intro{
+    padding:34px 0;
+}
+.company .intro p{
+    margin:0;
+    color:#666;
+    font-size:16px;
+    text-indent:34px;
+    line-height:24px;
+    letter-spacing:1px;
+}
+.company .attr{
+    display:inline-block;
+    width:19.6%;
+    text-align:center;
+}
+.attr-font{
+    display:inline-block;
+    width:65px;
+    height:65px;
+    color:#00bc8d;
+    font-size:28px;
+    text-align:center;
+    line-height:65px;
+    vertical-align:middle;
+    border-radius:50%;
+    border:2px solid #00bc8d;
+}
+.attr-font:before{
+    font-family:'myfont';
+    font-style:normal;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    speak:none;
+    -webkit-font-smoothing:antialiased;
+}
+.calendar:before{
+    content:"";
+}
+.location:before{
+    content:"";
+}
+.people:before{
+    content:"";
+}
+.attr-font{
+    background-position:50%;
+    background-repeat:no-repeat;
+}
+.attr-font.money{
+    background-image:url(../../images/about-img/shi-jiao-zi-ben.png);
+}
+.attr-font.map{
+    background-image:url(../../images/about-img/about-company-office-map.png);
+}
+.statistic{
+    display:inline-block;
+    padding-left:18px;
+    vertical-align:middle;
+}
+.statistic h6,.statistic h4{
+    margin:12px 0;
+    color:#333;
+    font-weight:400;
+    text-align:left;
+    line-height:1;
+}
+.statistic h6{
+    font-size:14px;
+}
+.statistic h4{
+    font-size:18px;
+}
+/*荣誉和资质*/
+.honors{
+    padding:10px 0 0;
+    font-size:16px;
+    color:#333;
+}
+.honors .honor{
+    display:inline-block;
+    width:24.6%;
+    text-align:center;
+    vertical-align:top;
+}
+.honors .honor img{
+    max-width:200px;
+    height:160px;
+    border:1px solid #e4e4e4;
+    vertical-align:middle;
+}
+.honors .honor p{
+    margin:6px auto 0;
+    width:200px;
+    font-size:14px;
+    line-height:1.72222;
+}
+/*投资方*/
+.secondary ul{
+    margin:0;
+    padding:0;
+}
+.secondary ul li{
+    display:inline-block;
+    margin:0 22px 0 0;
+}
+.secondary ul li.active a{
+    color:#00bc8d;
+}
+.secondary ul li a{
+    color:#666;
+}
+.secondary ul li a.active{
+    color:#00bc8d;
+}
+.company .tab-content{
+    padding:22px 0 0;
+    margin-bottom:20px;
+    position:relative;
+    z-index:1;
+}
+.tab-content .logo{
+    display:inline-block;
+    width:25%;
+    height:132px;
+    text-align:center;
+    vertical-align:top;
+    border:1px solid #f0f0f0;
+}
+.tab-content .logo div{
+    display:inline-block;
+    width:1px;
+    height:132px;
+    vertical-align:middle;
+}
+.tab-content .logo img{
+    max-width:80%;
+    line-height:132px;
+    vertical-align:middle;
+}
+.tab-content .desc{
+    display:inline-block;
+    width:71.8%;
+    padding-left:28px;
+    color:#333;
+    text-indent:34px;
+    vertical-align:top;
+    line-height:24px;
+    font-size:16px;
+    letter-spacing:1px;
+}
+.tab-content .desc p{
+    margin:0;
+    color:#666;
+    font-size:14px;
+    line-height:1.72222;
+}
+.tab-pane{
+    display:none;
+}
+.tab-pane.active{
+    display:block;
+}
+/*组织架构和部门设置*/
+.company-structure-img{
+    width:100%;
+    height:220px;
+    background-image:url(../../images/about-img/company-structure.png);
+    background-position:50%;
+    margin-bottom:30px;
+}
+.info-employee{
+    border-top:1px solid #e4e4e4;
+    padding-top:25px;
+}
+.info-employee .sub-title{
+    font-size:18px;
+    color:#333;
+    letter-spacing:0;
+    line-height:26px;
+    text-indent:unset;
+}
+.info-employee p{
+    font-size:16px;
+    color:#666;
+    letter-spacing:0;
+    line-height:26px;
+    text-indent:20px;
+    margin:0 0 12px;
+}
+.info-employee .data-desc{
+    color:#999;
+}
+.info-employee table{
+    margin-bottom:0;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.info-employee th{
+    width:25%;
+    height:44px;
+    color:#333;
+    font-size:16px;
+    font-weight:400;
+    text-align:center;
+    background:#fafafa;
+    border:1px solid #f0f0f0;
+}
+.info-employee td{
+    width:25%;
+    text-align:center;
+    vertical-align:top;
+    border:1px solid #f0f0f0;
+}
+#ageList,#degreeList,#techList,#manageList{
+    position:relative;
+    background:transparent;
+    height:140px;
+}
+.info-employee .chart-desc{
+    margin:0;
+    padding:0 20px 4px;
+    font-size:14px;
+    color:#999;
+    text-align:left;
+    line-height:23px;
+}
+.info-employee .detail-link{
+    padding:10px 22px 0;
+}
+.info-employee .detail-link .link{
+    display:block;
+    color:#00bc8d;
+    font-size:14px;
+    text-align:right;
+    text-decoration:none;
+    cursor:pointer;
+}
+/*管理团队*/
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+}
+.leadership td,.partner td{
+    width:20%;
+    vertical-align:top;
+    text-align: center;
+    border:1px solid #f0f0f0;
+}
+.leadership td p,.partner td p{
+    font-size:16px;
+    margin:26px 0;
+    line-height:1.72222;
+}
+.leadership td:hover{
+    background:#f0f0f0;
+}
+.leadership td.active{
+    color:#00bc8d;
+}
+.leadership .leader-info{
+    margin-top:40px;
+}
+.leader-info{
+    display:none;
+}
+.leader-info.active{
+    display:block;
+}
+.leadership .col-1-5{
+    display:inline-block;
+    vertical-align:top;
+    width:20%;
+}
+.text-center{
+    text-align:center;
+}
+.leadership .col-1-5 .avatar{
+    display:inline-block;
+    width:160px;
+    height:160px;
+    text-indent:0;
+    white-space:normal;
+    overflow:hidden;
+}
+.leadership .col-1-5 .avatar .avatar-img{
+    width:100%;
+    height:100%;
+}
+img{
+    vertical-align:middle;
+}
+.leadership .name{
+    margin-top:6px;
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:12px;
+    color:#141d26;
+}
+.leadership .job{
+    margin:0;
+    font-size:14px;
+    line-height:1;
+}
+.leadership .col-4-5{
+    display:inline-block;
+    vertical-align:top;
+    width:78.5%;
+    padding-left:12px;
+}
+.leadership .desc{
+    margin:0;
+    word-break:break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+    font-size:14px;
+    color:#666;
+    line-height:22px;
+}
+.corporate .intro{
+    padding:0;
+}
+/*点融大事记*/
+
+/* 分支机构 */
+.company .offices{
+    border-bottom:1px solid #f0f0f0;
+    padding-bottom:20px;
+    display:none;
+}
+.company .offices.active{
+    display:block;
+}
+.company .office,.company .office-img,.company .office-info,.col-1-5,.col-3-5,.col-8-24,.col-6-24,.col-2-5{
+    display:inline-block;
+    vertical-align:top;
+}
+.company .office{
+    padding:0 0 20px;
+    width:49.8%;
+}
+.company .office-img{
+    width:25%;
+}
+.company .office-img img{
+    width:100%;
+    height:89px;
+}
+.company .office-info{
+    padding:0 20px;
+    width:66.9%;
+}
+.company .office-info h3{
+    margin:0;
+    color:#333;
+    font-size:16px;
+    font-weight:700;
+    line-height:20px;
+}
+.company .office-info p{
+    margin-top:4px;
+    margin-bottom:0;
+    line-height:1.4;
+}
+.company .office-info span{
+    display:inline-block;
+}
+/*联系我们*/
+.company .information{
+    display:inline-block;
+    padding-left:15px;
+    padding-right:20px;
+    width:25%;
+    vertical-align:top;
+}
+.company .information h2{
+    margin-top:0;
+    font-size:22px;
+    color:#333;
+    line-height:32px;
+    font-weight:300;
+}
+.company .information p{
+    margin:0 0 12px;
+    margin-top:-6px;
+    color:#999;
+    font-size:14px;
+    line-height:21px;
+}
+.company .call{
+    font-size:0;
+}
+.company .call h2{
+    margin-bottom:12px;
+}
+
+/*平台优势*/
+.billborads{
+    padding:40px 0 10px;
+}
+.col-8-24{
+    width:33%;
+}
+.billborad{
+    text-align: center;
+    padding:0 22px;
+}
+.no-gap{
+    padding:0;
+}
+.col-1-5{
+    width:20%;
+}
+.billborads img{
+    margin:0 auto;
+}
+.col-3-5{
+    width:60%;
+}
+.about-scope h5{
+    margin:12px auto 8px;
+    font-size:20px;
+    color:#666;
+    line-height:1;
+    font-weight:400;
+}
+.billborads h5{
+    text-align:center;
+    margin-top:4px;
+}
+.billborads p{
+    margin:4px 0;
+    color:#999;
+    font-size:16px;
+    line-height:22px;
+    text-align: center;
+}
+.col-6-24{
+    width:20.7%;
+}
+.technology-tip{
+    margin:23px 0 0!important;
+    padding:20px 0 5px;
+    border-top:1px solid #e4e4e4;
+    text-indent:32px;
+    color:#999;
+    font-size:16px;
+    line-height:22px;
+}
+.technology-tip.no-border{
+    border-top:none;
+    padding-top:0;
+    margin-top:0!important;
+}
+/*信贷资产来源*/
+.source-assets ul{
+    margin:8px 0 36px;
+    padding-left:22px;
+    list-style-type:disc;
+}
+.source-assets ul>li{
+    color:#e4e4e4;
+    list-style-type:disc;
+}
+.source-assets ul>li p,.safety p{
+    margin:0;
+    color:#666;
+    font-size:16px;
+    line-height:16px;
+}
+.source-banner{
+    width:100%;
+    height:386px;
+    margin:0 auto 18px;
+    background-image:url(../../images/about-img/source-banner.png);
+}
+.safety p{
+    line-height:22px;
+}
+.safety .card-content{
+    font-size:0;
+}
+.safety .col-6-24{
+    width:25%;
+}
+.safety .col-6-24 img{
+    margin:16px auto 0
+}
+.safety .col-6-24 p{
+    margin:4px;
+    color:#999;
+    font-size:16px;
+    line-height:22px;
+}
+/*法律保障*/
+.card-content>img.natural{
+    width:auto;
+    padding-top:20px;
+    border:none;
+}
+/*隐私保护*/
+.billborad.wide-gap{
+    padding:0 44px;
+}
+.billborad.wide-gap p{
+    margin:4px 0;
+    color:#999;
+}
+.billborad.wide-gap.col-8-24{
+    width:33.33%;
+}
+[v-cloak]{display:none;}
+
+/*运营数据*/
+.operation .card.summary .card-content{
+    padding-bottom:15px;
+    background:url(../../images/about-img/banner.jpg) no-repeat;
+}
+.operation .card.summary .logo{
+    margin-bottom:15px;
+    padding-bottom:165px;
+}
+.operation .card.summary .logo .title{
+    font-weight:300;
+    margin:0;
+    color:#333;
+    font-size:22px;
+    line-height:1;
+}
+.col-2-5{
+    width:39%;
+}
+.text-right{
+    text-align:right;
+}
+.timestamp{
+    color:#999;
+}
+.text-left{
+    text-align:left;
+}
+.operation .card.summary .value{
+    margin:15px auto 8px;
+    font-size:24px;
+    line-height:1;
+}
+.operation .card.summary .name{
+    margin:8px auto 15px;
+    color:#999;
+}
+.accumulate-invest-amount{
+    border-top:1px solid #e4e4e4;
+    border-bottom:1px solid #e4e4e4;
+}
+.accumulate-invest-amount .sub-title{
+    font-size:18px;
+    color:#333;
+    line-height:20px;
+}
+.accumulate-title{
+    padding-top:20px;
+}
+/*折线图*/
+.echarts-container{
+    height:280px;
+}
+.data-distribution .left{
+    border-right:1px solid #e4e4e4;
+    margin-top:24px;
+}
+.col-12-24{
+    width:49.8%;
+    display:inline-block;
+}
+.data-distribution .sub-title{
+    font-size:18px;
+    color:#333;
+    line-height:20px;
+}
+.data-distribution .right-sub{
+    padding:24px 0 0 24px;
+}
+.loan-summary{
+    margin-bottom:22px;
+}
+.operation .card.summary.loan-summary .card-content{
+    padding-top:15px;
+    background:none;
+}
+.loan-summary .card-head .sidebar{
+    color:#999;
+}
+.operation .card.summary.loan-summary .card-content.report-content{
+    padding-top:30px;
+    padding-bottom:22px;
+}
+.report-content .col-8-24{
+    line-height:20px;
+    padding-left:68px;
+    margin-bottom:20px;
+}
+.report-content .report-link{
+    font-size:14px;
+    color:#333;
+}
+.report-content .report-link:before{
+    content:"";
+    display:inline-block;
+    width:5px;
+    height:5px;
+    background:#e4e4e4;
+    border-radius:2px;
+    margin-right:11px;
+    vertical-align: 3px;
+}
+/*银行存管*/
+.about-scope .desc{
+    margin:0;
+    color:#666;
+    font-size:14px;
+    line-height:22px;
+}
+.depository .link{
+    display:inline-block;
+    margin:10px 0 20px;
+    text-align:left;
+    color:#00bc8d;
+    float:none;
+}
+.depository .depository-banner{
+    width:100%;
+    height:331px;
+    margin:0 auto 18px;
+    background-image:url(../../images/about-img/depository-banner.png);
+}
+.depository .col-8-24{
+    width:33%!important;
+}
+/*风控策略*/
+/*风控流程*/
+.risk-control .risk-flow-banner{
+    display:block;
+    width:825px;
+    margin:0 auto;
+}
+.risk-control .billborads{
+    padding:0;
+}
+.risk-control .billborad{
+    /*padding:0 50px;*/
+}
+.risk-control .header{
+    margin-top:16px;
+    color:#666;
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:12px;
+    line-height:1.1;
+}
+.risk-control .header.header1{
+    padding-right:30px;
+}
+.risk-control .content{
+    position:relative;
+    height:189px;
+    margin-top:28px;
+    overflow:hidden;
+}
+.risk-control .icon{
+    position:absolute;
+    left:0;
+    top:2px;
+    display:block;
+    width:17px;
+    height:100%;
+}
+.risk-control .icon.icon-1{
+    background:url(../../images/about-img/icon-1.png);
+}
+.risk-control dl{
+    margin:0 0 0 27px;
+    font-size:14px;
+}
+.risk-control dl dt,.risk-control dl dd{
+    margin:0;
+    padding-bottom:8px;
+    line-height:1;
+    font-weight:400;
+    color:#666;
+}
+.risk-control dl dt:first-child{
+    padding-top:2px;
+}
+.risk-control dl dd{
+    color:#999;
+}
+.risk-control .last{
+    position:absolute;
+}
+.risk-control .last.last-2{
+    bottom:14px;
+}
+.risk-control .last.last-1{
+    bottom:-8px;
+}
+.risk-strategy .col-6-24{
+    display:inline-block;
+    padding:4px 0;
+    width:auto;
+}
+.risk-strategy .intro{
+    border-right:1px solid #e4e4e4;
+    padding:4px 30px 4px 3px;
+    color:#666;
+}
+.risk-strategy .intro p{
+    width:208px;
+    font-size:14px;
+    line-height:20px;
+}
+.risk-strategy .strategy-banner{
+    margin:0 40px 0 32px;
+    width:300px;
+    height:231px;
+    background-image:url(../../images/about-img/risk-strategy.png);
+}
+.risk-strategy .card-content{
+    font-size:0;
+}
+.risk-strategy .process{
+    margin-right:32px;
+    width:210px;
+}
+.risk-strategy .process .header{
+    margin:0 0 30px;
+    line-height:20px;
+    font-size:14px;
+    font-weight:400;
+    color:#141d26;
+}
+.risk-strategy .items .item{
+    margin-bottom:18px;
+    font-size:12px;
+}
+.risk-strategy .items .item p{
+    line-height:17px;
+    font-size:14px;
+}
+.risk-strategy .items .item .name{
+    margin-bottom:3px;
+    color:#78d6bf;  
+}
+.risk-strategy .items .item .info{
+    color:#999;
+}
+.risk-strategy .items2{
+    width:240px;
+}
+/* 点融动态 */
+.news .card-content,.media .card-content{
+    font-size:0;
+}
+.news ul,.media ul{
+    padding-left:40px;
+}
+.news .article,.media .article{
+    padding:20px 0 14px;
+    border-bottom:1px solid #f0f0f0;
+}
+.news .article .img-wrapper,.media .article .img-wrapper{
+    width:15%;
+    display:inline-block;
+    vertical-align:top;
+}
+.news .article .img-wrapper img,.media .article .img-wrapper img{
+    width:100%;
+}
+.news .article .summary,.media .article .summary{
+    padding-left:20px;
+    width:85%;
+    display:inline-block;
+    vertical-align:top;
+}
+.news .article .summary .title,.media .article .summary .title{
+    margin:0;
+    font-size:20px;
+    line-height:1;
+    font-weight:300;
+    color:#333;
+}
+.news a,.media a{
+    color:#333;
+}
+.news .article .summary .timestamp,.news .article .summary .content,.media .article .summary .timestamp,.media .article .summary .content{
+    font-size:14px;
+    line-height:14px;
+    color:#999;
+    margin:14px 0;
+}
+.news .page-container,.media .page-container{
+    padding:8px 0;
+    text-align:right;
+}
+.news .sl-page,.media .sl-page{
+    display:block;
+}
+.news .sl-page li,.media .sl-page li{
+    display:inline-block;
+    margin:0 4px;
+    vertical-align:middle;
+    text-align:center;
+}
+.news .sl-page li span,.media .sl-page li span{
+    display:inline-block;
+    margin:0;
+    padding:0 5px;
+    width:auto;
+    min-width:26px;
+    height:26px;
+    color:#999;
+    font-size:14px;
+    line-height:26px;
+    cursor:pointer;
+    border-radius:2px;
+}
+.news .sl-page li.active span,.media .sl-page li.active span{
+    color:#fff;
+    background:#ccc;
+}
+.news .sl-page li.active span:hover,.media .sl-page li.active span:hover{
+    background:#ccc;
+}
+.news .sl-page li span:hover,.media .sl-page li span:hover{
+    background:#f0f0f0;
+}
+/*法律法规*/
+.laws{
+    margin:0 auto;
+    width:100%;
+    max-width:1140px;
+    padding:0 22px;
+    border:1px solid #d7dadb;
+    background:#fff;
+}
+.laws .content{
+    margin:30px 28px 40px;
+}
+.laws h4{
+    font-size:14px;
+    font-weight:700;
+    margin:20px 0;
+    line-height:20px;
+    color:#141d26;
+}
+.laws p{
+    margin:4px 0;
+    color:#4a4a4a;
+    font-size:14px;
+    line-height:2;
+}
+.laws .content .version{
+    color:#999;
+}
+.laws h2{
+    font-size:21px;
+    font-weight:700;
+    margin-bottom:12px;
+    color:#141d26;
+}
+.laws .protocol-head{
+    margin-top:60px;
+    padding-bottom:14px;
+    border-bottom:1px solid #d7dadb;
+    line-height:1.2;
+}
+.laws ol{
+    margin:0 0 2em;
+    padding:0;
+}
+.laws .first-num-ol{
+    counter-reset:listCount;
+}
+.laws ol li{
+    list-style-type:none;
+    position:relative;
+}
+.laws .content h6{
+    color:#4a4a4a;
+    font-size:16px;
+    font-weight:700;
+    margin:2.3em 0;
+}
+.laws .first-num-ol>li>h6{
+    text-indent:1em;
+}
+.laws ol li:before,.laws ol li>h6:before{
+    position:absolute;
+    left:-1.2em;
+    font-size:inherit;
+    font-weight:inherit;
+}
+.laws .first-num-ol>li>h6:before{
+    content:counters(listCount,".") " ";
+    counter-increment:listCount;
+}
+/*合作伙伴*/
+.partner ul{
+    border-top:1px solid #f0f0f0;
+}
+.partner li{
+    width:16.66%;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+    font-size:16px;
+    display:inline-block;
+    border-left:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+    cursor:pointer;
+}
+.partner li:nth-child(6n),.partner li:nth-child(10n){
+    border-right:1px solid #f0f0f0;
+}
+.partner .dr-tab-pane img{
+    margin:40px auto 50px;
+    display:block;
+}
+.partner .dr-tab-pane p{
+    font-size:14px;
+    line-height:1.72222;
+    margin:0 0 12px;
+    text-indent:2em;
+}
+.partner .dr-tab-pane{
+    display:none;
+}
+.partner .dr-tab-pane.active{
+    display:block;
+}
+.partner li:hover{
+    background:#f0f0f0;
+}
+.partner li span.selected{
+    color:#00bc8d;
+}

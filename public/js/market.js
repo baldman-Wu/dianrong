@@ -1,0 +1,12 @@
+// $(function(){
+//     $.ajax({
+//         type:"GET",
+//         url:"http://127.0.0.1:3000/market",
+//         data:{
+//             port:3000
+//         },
+//         success:function(data,textStatus){
+//             console.log(data);
+//         }
+//     });
+// });

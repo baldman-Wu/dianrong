@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.box {
+    margin-top: 80px;
+    width: 100%;
+    height: 377px;
+}
+.dashiji{
+    position:relative;
+}
+.dashiji-content{
+    margin:8px 70px 0;
+    position:relative;
+}
+.events {
+    position: relative;
+    padding: 10px 0;
+    height: 260px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 4197.6px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .8s ease-in;
+}
+
+.event-ng-scope-odd {
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    left: 225px;
+}
+
+.ng-binding-h4 {
+    display: block;
+    color: #00bc8d;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ng-binding-p {
+    font-size: 14px;
+    line-height: 1.72222;
+    color: #999;
+}
+
+.btn-box {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #f0f0f0;
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    left: -6px;
+    border-radius: 5px;
+}
+
+.btn-box-1 {
+    bottom: -5px;
+    left: -8px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    z-index: 99;
+}
+
+.event-ng-scope-odd-1 {
+    left: 555px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 0px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.event-ng-scope-even {
+    left: 60px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 8px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.ng-binding-h4-4 {
+    display: block;
+    color: #00bc8d;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.crossline {
+    position: relative;
+    top: 120px;
+    display: block;
+    border: 1px solid #f0f0f0;
+}
+
+.event-ng-scope-even-1 {
+    left: 390px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 8px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.event-in-events-2 {
+    left: 720px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 8px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.btn-box-a {
+    top: -8px;
+    left: -8px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.btn-box-b {
+    bottom: -10px;
+    left: -6px;
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.control-next {
+    right: -30px;
+    position: absolute;
+    top: 126px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 9999;
+    font-weight: 100;
+}
+
+.fa-chevron-right {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    width: 36px;
+    height: 36px;
+    color: #999;
+    font-size: 18px;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-ng-scope-odd-2 {
+    left: 1104px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.event-ng-scope-odd-3 {
+    left: 1434px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.event-ng-scope-odd-4 {
+    left: 1764px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.control-next-left {
+    left: -30px;
+    position: absolute;
+    top: 125px;
+    text-align: center;
+    z-index: 999;
+}
+
+.fa-chevron-left {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    width: 36px;
+    height: 36px;
+    color: #999;
+    font-size: 18px;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.event-ng-scope-even-3 {
+    left: 1269px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.event-ng-scope-even-4 {
+    left: 1599px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 8px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.btn-box-c {
+    top: 0;
+    left: -6px;
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.btn-box-d {
+    bottom: -5px;
+    left: -9px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.btn-box-e {
+    bottom: -10px;
+    left: -6px;
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.btn-box-f {
+    top: -8px;
+    left: -8px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.contele-odd {
+    left: 2286px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-odd-1 {
+    left: 2628px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-odd-2 {
+    left: 2114px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-odd-3 {
+    left: 2461px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-odd-4 {
+    left: 2805px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.ng-btnA {
+    top: 0;
+    left: -6px;
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.ng-btn-B {
+    top: -8px;
+    left: -8px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.ng-btn-C {
+    bottom: -5px;
+    left: -9px;
+    display: block;
+    border: 3px solid #00bc8d;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.contele-add-1 {
+    left: 3222px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-add-2 {
+    left: 3552px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-add-3 {
+    left: 3882px;
+    top: 0;
+    padding-top: 0;
+    height: 120px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-add-4 {
+    left: 3387px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.contele-add-5 {
+    left: 3717px;
+    top: 120px;
+    height: 100px;
+    position: absolute;
+    padding: 16px 100px 0 16px;
+    border-left: 2px solid #f0f0f0;
+    width: 330px;
+}
+
+.ng-btn-9 {
+    bottom: -10px;
+    left: -6px;
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+}
+
+.Suer-1 {
+    display: block;
+}
+
+.Suer-2 {
+    display: none;
+}

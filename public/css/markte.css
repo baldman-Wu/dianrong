@@ -1,0 +1,176 @@
+body{
+	background-color: #f5f5f5;
+}
+.container{
+	margin-top: 50px;
+}
+.container-top{
+	overflow: hidden;
+	width: 1138px;
+}
+.container-left{
+	float: left;
+
+}
+.container-left img{
+	height: 236px;
+}
+.container-right{
+	float: right;
+	width: 280px;
+	height: 236px;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+}
+.container-right-data{
+	height: 44px;
+	width: 248px;
+	margin-top: 26px;
+	margin-left: 33px;
+	overflow: hidden;
+}
+.dataimg{
+	float: left;
+}
+.dataimg img{
+	height: 44px;
+	width: 44px;
+}
+.data-right{
+	float: right;
+	text-align: left;
+}
+.data-right p{
+	width: 192px;
+	height: 18px;
+	
+}
+.data-right-top{
+	margin-bottom: 0;
+	color: #999;
+}
+.data-right-bottom{
+	margin-top: 10px;
+	margin-bottom:0;
+	color: #333;
+	font-size: 18px;
+	line-height: 18px;
+}
+.container-center{
+	margin-top: 20px;
+	width: 1138px;
+	border: 1px solid #e4e4e4;
+	background: #fff;
+}
+.container-center-top{
+	
+	width: 100%;
+	
+
+}
+.container-center-top h3{
+  	font-size: 22px;
+    color: #333;
+    margin: 0;
+    padding: 15px 21px;
+    line-height: 30px;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.container-center-top h3 span{
+	 position: absolute; 
+	 right: 30px;
+	 font-size: 14px;
+	 line-height: 34px;
+	 color: #999;
+	 width: 250px;
+	
+}
+.container-center-bottom{
+	width: 100%;
+}
+.content{
+	margin: 0 40px;
+	padding-top: 16px;
+}
+.content-item{
+	overflow: hidden;
+	text-align: left;
+	cursor: pointer;
+}
+.icn{
+	width: 196px;
+	float: left;
+}
+.content-item>.icn img{
+	margin: 0 0 0 10px;
+}
+.content-item>.icn p{
+	color: #78d6bf;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top:8px;
+}
+.income{
+	width: 246px;
+	float: left;
+}
+.income>.num{
+    font-size: 36px;
+    color: #ff6c03;
+    line-height: 36px;
+    margin: 6px 0 4px;
+    display: inline-block;
+}
+.num small{
+	font-size: 18px;
+}
+.text{
+	color: #999;
+	font-size: 12px;
+	line-height: 14px;
+}
+.starNum{
+	margin: 20px 0 10px;
+	float:left;
+	width: 176px;
+	font-size: 16px;
+}
+.movTime{
+	width: 234px;
+	float:left;
+}
+.move{
+	font-size: 16px;
+    color: #333;
+    line-height: 22px;
+    margin: 20px 0 10px;
+}
+
+.butt{
+	border-radius: 54px;
+	width: 130px;
+	height: 32px;
+	border:none;
+	background: #00bc8d;
+	margin-top: 25px;
+	font-size: 18px;
+	float:right;
+	text-align: center;
+	line-height: 32px;
+}
+.butt a{
+	color: #fff;
+	text-decoration:none;
+
+}
+
+.bottom-p{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	color: #ccc;
+	font-size: 14px;
+	width: 1140px;
+	height: 20px;
+}
